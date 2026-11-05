@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShloobSoft | Enterprise Web Architecture, Digital Ecosystems & Software Studio</title>
+  <meta name="description" content="ShloobSoft designs, builds, and manages unified multi-site web ecosystems, CRM-integrated sales platforms, and automated media workflows backed by 20+ years of software architecture experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              950: '#070B14',
+              900: '#0F172A',
+              800: '#1E293B',
+              600: '#2563EB',
+              500: '#3B82F6',
+              accent: '#D97706',
+              gold: '#F59E0B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-brand-950/95 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-display font-extrabold text-xl shadow-lg shadow-blue-500/20">
+          S
+        </div>
+        <div>
+          <span class="font-display font-bold text-xl tracking-tight text-white">Shloob<span class="text-blue-400">Soft</span></span>
+          <span class="hidden sm:inline-block ml-2 text-xs uppercase tracking-widest text-slate-400 border-l border-slate-700 pl-2">Systems &amp; Web Architecture</span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#lifecycle" class="hover:text-white transition">Multi-Site Architecture</a>
+        <a href="#technology" class="hover:text-white transition">Media &amp; R&amp;D</a>
+        <a href="#leadership" class="hover:text-white transition">Leadership</a>
+        <a href="#contact" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold transition shadow-sm">
+          Contact Us
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-brand-950 text-white overflow-hidden bg-grid">
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-600/10 via-transparent to-brand-950 pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-semibold uppercase tracking-wider mb-6">
+          Enterprise Engineering Meets Modern Web Ecosystems
+        </div>
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.12] mb-6">
+          Scalable Web Architecture &amp; Digital Ecosystems Built to Evolve.
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl">
+          Backed by over 20 years of enterprise software engineering and systems architecture experience, <strong>ShloobSoft</strong> designs, builds, and manages high-performance websites, multi-site portfolios, CRM-integrated sales portals, and ongoing digital operations—without traditional agency bloat.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#contact" class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-lg shadow-blue-600/25 transition">
+            Start an Architecture Consultation
+          </a>
+          <a href="#lifecycle" class="px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-700 transition">
+            Explore Our Multi-Site Approach
+          </a>
+        </div>
+      </div>
+
+      <!-- Trust Bar / Metrics -->
+      <div class="mt-20 pt-10 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <div class="font-display font-extrabold text-3xl text-white">20+ Years</div>
+          <div class="text-sm text-slate-400 mt-1">Software &amp; Systems Engineering</div>
+        </div>
+        <div>
+          <div class="font-display font-extrabold text-3xl text-white">Full-Lifecycle</div>
+          <div class="text-sm text-slate-400 mt-1">Architecture, Build, Hosting &amp; SEO</div>
+        </div>
+        <div>
+          <div class="font-display font-extrabold text-3xl text-white">CRM &amp; Portal</div>
+          <div class="text-sm text-slate-400 mt-1">Seamless 3rd-Party Integrations</div>
+        </div>
+        <div>
+          <div class="font-display font-extrabold text-3xl text-white">White-Glove</div>
+          <div class="text-sm text-slate-400 mt-1">Ongoing Content &amp; Site Management</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section -->
+  <section id="services" class="py-24 max-w-6xl mx-auto px-6">
+    <div class="max-w-2xl mb-16">
+      <div class="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-2">End-to-End Capabilities</div>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+        One Unified Technical Partner for Your Entire Digital Footprint
+      </h2>
+      <p class="text-slate-600 mt-4 text-lg">
+        Whether you need a crisp corporate validation site, dynamic project tracking hubs, or multi-stage community sales and operations portals, we handle the full digital stack under one roof.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xl mb-6">
+          01
+        </div>
+        <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Web Architecture &amp; Site Design</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Modular multi-site design systems, custom responsive UI/UX, and WCAG 2.1 AA accessible interfaces engineered so your digital properties share a rock-solid foundation while showcasing distinct brand identities.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+          <li>• Corporate Brochureware &amp; Investor Portals</li>
+          <li>• Reusable Multi-Site Component Libraries</li>
+          <li>• Interactive Site Plans &amp; Floorplan Explorers</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xl mb-6">
+          02
+        </div>
+        <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Consultative Sales, CRM &amp; Portals</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Websites built to drive long-cycle consultative sales—connecting multi-step lead generation, tour scheduling, and brochure downloads directly into your CRM and resident/customer operations platforms.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+          <li>• CRM Sync (HubSpot, Salesforce, WelcomeHome, Sherpa)</li>
+          <li>• Resident, Family &amp; Customer Support Hubs</li>
+          <li>• Employee Recruiting &amp; 3rd-Party Software Bridges</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xl mb-6">
+          03
+        </div>
+        <h3 class="font-display font-bold text-xl text-slate-900 mb-3">Hosting, SEO &amp; Content Operations</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Managed high-speed cloud hosting, 24/7 security and uptime monitoring, Local &amp; Technical SEO, custom brand graphics, and reliable monthly publishing of project status updates, media galleries, and social content.
+        </p>
+        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+          <li>• High-Availability Cloud Hosting, CDN &amp; Backups</li>
+          <li>• Local SEO, Schema Markup &amp; Analytics Reporting</li>
+          <li>• Ongoing Progress Reports, Copywriting &amp; Graphics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multi-Site Lifecycle Section -->
+  <section id="lifecycle" class="py-24 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <div class="text-amber-400 font-semibold text-sm uppercase tracking-wider mb-2">Built for Real Estate, Development &amp; Multi-Entity Portfolios</div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight mb-4">
+          The Unified Lifecycle Architecture Advantage
+        </h2>
+        <p class="text-slate-300 text-lg leading-relaxed">
+          Traditional agencies treat every project and community website as a disposable one-off build. We engineer a unified multi-site system where websites seamlessly evolve alongside your physical projects—preserving domain authority, SEO rankings, and capital.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-7">
+          <div class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Stage 1 • Corporate Tier</div>
+          <h3 class="font-display font-bold text-xl mb-3">Corporate Validation Sites</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Authoritative brochureware sites that validate your organization to capital partners, investors, municipalities, and contractors, with dynamic portfolio directories linking to active projects.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-7">
+          <div class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">Stage 2 • Development Tier</div>
+          <h3 class="font-display font-bold text-xl mb-3">Project &amp; Construction Sites</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Dedicated project hubs showcasing architectural renderings, site plans, contractor info, and structured progress feeds where raw field photos and status reports are polished and published monthly.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-7">
+          <div class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-2">Stage 3 • Operations Tier</div>
+          <h3 class="font-display font-bold text-xl mb-3">Evolving Community Portals</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            As projects mature, Stage 2 sites seamlessly upgrade into full consultative sales &amp; CRM-integrated websites, expanding over time with resident/family portals, career hubs, and third-party software connections.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-House Technology & R&D Section -->
+  <section id="technology" class="py-24 max-w-6xl mx-auto px-6">
+    <div class="bg-gradient-to-br from-slate-900 to-brand-950 rounded-3xl p-8 sm:p-12 md:p-16 text-white shadow-xl">
+      <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-md bg-blue-500/20 text-blue-300 text-xs font-semibold uppercase tracking-wider mb-4">
+            Proprietary R&amp;D • The Shloob Suite
+          </div>
+          <h2 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight mb-4">
+            Powered by In-House Media &amp; Content Automation Software
+          </h2>
+          <p class="text-slate-300 leading-relaxed mb-6">
+            Alongside our client web architecture practice, ShloobSoft develops the <strong>Shloob Suite</strong>—including <em>Shloob's Content Genius (SCG)</em> and proprietary media-processing pipelines. 
+          </p>
+          <p class="text-slate-300 leading-relaxed">
+            For our web management clients, this means we don't just build static pages: our internal tooling allows us to transform raw construction photos, video clips, and field notes into optimized web updates, visual graphics, and multi-channel content faster and more consistently than conventional teams.
+          </p>
+        </div>
+        <div class="md:col-span-5 bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 space-y-4">
+          <div class="border-b border-slate-700 pb-4">
+            <div class="font-display font-bold text-white">Engineering-First Workflow</div>
+            <div class="text-xs text-slate-400 mt-1">Why clients choose ShloobSoft over traditional agencies</div>
+          </div>
+          <div class="flex items-start gap-3 text-sm">
+            <span class="text-blue-400 font-bold">✓</span>
+            <span class="text-slate-200">Direct access to a 20-year Principal Software Architect</span>
+          </div>
+          <div class="flex items-start gap-3 text-sm">
+            <span class="text-blue-400 font-bold">✓</span>
+            <span class="text-slate-200">Transparent T&amp;M consulting with strict Not-To-Exceed caps</span>
+          </div>
+          <div class="flex items-start gap-3 text-sm">
+            <span class="text-blue-400 font-bold">✓</span>
+            <span class="text-slate-200">Predictable task-by-task buildouts &amp; per-site monthly retainers</span>
+          </div>
+          <div class="flex items-start gap-3 text-sm">
+            <span class="text-blue-400 font-bold">✓</span>
+            <span class="text-slate-200">100% client ownership of code, designs, domains &amp; data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="leadership" class="py-16 max-w-6xl mx-auto px-6 border-t border-slate-200">
+    <div class="max-w-3xl">
+      <div class="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-2">Principal Leadership</div>
+      <h2 class="font-display font-bold text-3xl text-slate-900 tracking-tight mb-4">
+        Built on Two Decades of Production Software Engineering
+      </h2>
+      <p class="text-slate-600 leading-relaxed mb-4">
+        Founded by <strong>Tobias Brousil</strong>, ShloobSoft brings over 20 years of senior software engineering and systems architecture experience—including building high-reliability software systems at <strong>Amazon</strong> and across the interactive software industry.
+      </p>
+      <p class="text-slate-600 leading-relaxed">
+        We partner closely with company principals, controllers, and internal IT teams to design digital infrastructure that is clean to budget, effortless to maintain, and engineered to scale over the multi-year life of your projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact / Footer Section -->
+  <section id="contact" class="py-20 bg-brand-950 text-white border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-2">Get In Touch</div>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight mb-4">
+            Ready to Architect Your Digital Portfolio?
+          </h2>
+          <p class="text-slate-300 leading-relaxed mb-8">
+            Reach out directly to discuss corporate brochureware sites, multi-site architecture consulting, or ongoing website management retainers.
+          </p>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center gap-3">
+              <span class="text-slate-400 w-20">Principal:</span>
+              <span class="font-semibold text-white">Tobias Brousil, Founder &amp; Principal Architect</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-slate-400 w-20">Inquiries:</span>
+              <a href="mailto:inquiry@shloobsoft.net" class="font-semibold text-blue-400 hover:underline">inquiry@shloobsoft.net</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-slate-400 w-20">Web:</span>
+              <span class="text-slate-200">https://shloobsoft.net</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+          <h3 class="font-display font-bold text-xl mb-2">Send a Direct Inquiry</h3>
+          <p class="text-xs text-slate-400 mb-6">Click below to open a pre-addressed email directly to our team.</p>
+          <a href="mailto:inquiry@shloobsoft.net?subject=ShloobSoft%20Architecture%20%26%20Web%20Consultation" class="block w-full text-center py-4 px-6 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-lg shadow-blue-600/20 transition">
+            Email inquiry@shloobsoft.net
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>&copy; 2026 ShloobSoft. All rights reserved.</div>
+        <div>Enterprise Web Architecture • Digital Ecosystems • Software Engineering</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
