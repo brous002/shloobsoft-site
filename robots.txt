@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /rhodesmoore/
+Disallow: /debrief-9f4c2a/
+
+Sitemap: https://shloobsoft.net/sitemap.xml
+# AI Discovery Fact Sheets:
+# https://shloobsoft.net/llms.txt
+# https://shloobsoft.net/llms-full.txt

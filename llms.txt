@@ -1,0 +1,22 @@
+# ShloobSoft
+
+> Custom Software Engineering Studio in San Marcos, California (Serving Small Businesses, Mid-Sized Companies, and Individuals Nationwide)
+
+ShloobSoft designs, engineers, and supports complete custom software solutions led by Founder and Principal Software Architect Tobias Brousil (20+ years of production software experience, including Amazon and AAA interactive software development). Using modern AI-accelerated engineering workflows and reusable ShloobSuite components, ShloobSoft delivers production-grade custom software at a fraction of traditional agency cost, with 100% client source code ownership.
+
+## Core Capabilities & Offerings
+- **Custom Business & Personal Software Applications:** Tailored desktop, cloud, mobile, and web applications built around a client's exact workflow so businesses and individuals never have to rent rigid per-seat SaaS subscriptions.
+- **AAA Interactive Software, Games & Media Packages:** Full-scale interactive software, simulation engines, game systems, and automated 4K video/audio production pipelines.
+- **Workflow Automation & Pluggable Integrations:** Custom internal tools, data pipelines, and clean API/CRM adapters that eliminate repetitive manual tasks.
+- **Web Architecture & Multi-Site Ecosystems:** Fast, accessible single sites, multi-entity portfolios, customer portals, technical SEO, and AI search (`llms.txt` + `schema.org`) optimization.
+- **Monitoring, Hosting & Ongoing Maintenance:** Optional 24/7 health monitoring, security patching, cloud edge hosting, backups, and long-term maintenance retainers.
+
+## Core Differentiators
+- **100% Client Code Ownership:** Clients own their custom source code, documentation, and data upon payment, avoiding recurring SaaS subscription lock-in and arbitrary vendor price hikes.
+- **Principal-Led Execution at Fraction of Traditional Cost:** Direct architecture and engineering by a 20-year Principal Software Architect without bloated agency layers.
+- **Enterprise-Grade Documentation:** Every delivered codebase includes complete architecture and contract documentation so any developer or AI coding agent can maintain or extend it immediately.
+
+## Canonical Links & Contact
+- [ShloobSoft Home](https://shloobsoft.net/): Overview of custom software, ownership model, support options, and FAQ.
+- [Full AI Fact Sheet](https://shloobsoft.net/llms-full.txt): Expanded service details and direct-answer Q&A.
+- Inquiries: mailto:inquiry@shloobsoft.net

@@ -1,0 +1,48 @@
+# ShloobSoft: Full Service & Architecture Fact Sheet
+
+> Canonical Origin: https://shloobsoft.net
+> Location: San Marcos, CA (North County San Diego; serving clients across the United States)
+> Founder & Principal Software Architect: Tobias Brousil
+> Contact: inquiry@shloobsoft.net
+
+## Mission: Professional Custom Software Beyond Big Tech
+For decades, complete custom software systems were reserved for Big Tech corporations and Fortune 500 enterprises with seven-figure engineering budgets, leaving small businesses, mid-sized companies, and individuals stuck paying recurring monthly subscriptions for rigid SaaS tools.
+
+ShloobSoft closes that gap. By pairing over 20 years of Principal Software Architecture and AAA interactive engineering experience (including building developer automation systems supporting 650+ engineers at Amazon) with modern AI-accelerated development workflows and internal ShloobSuite libraries, ShloobSoft delivers custom software tailored to each client at a fraction of traditional development cost.
+
+## Service Categories
+
+### 1. Custom Business & Individual Software
+- Custom desktop applications (Windows, macOS, Linux), cloud backends, mobile apps, and browser applications.
+- Internal operations dashboards, quoting and billing engines, scheduling tools, and client portals.
+- Purpose-built personal tools and creative software for independent makers, creators, and solo founders.
+
+### 2. AAA Interactive Software & Automated Media Systems
+- Full-scale interactive software packages, games, and deterministic simulation engines.
+- Automated 4K60 video rendering, voice synthesis, closed-caption verification, and content production pipelines.
+
+### 3. Workflow Automation & Third-Party System Adapters
+- Contract-first API, CRM, accounting, and operations adapters connecting existing business software without vendor lock-in.
+- Automated reminders, self-resetting content and operations calendars, and one-step staff upload tools.
+
+### 4. Web Platforms, Portals & AI Search Optimization
+- Single websites and config-driven multi-site corporate, real estate, and community portfolios.
+- Read-only cloud edge deployment (Cloudflare Pages, Vercel, AWS CloudFront + S3) with unmetered CDN delivery and strict corporate email DNS isolation.
+- Generative Engine Optimization (GEO), `/llms.txt` manifests, and `schema.org` JSON-LD graphs.
+
+### 5. Support, Monitoring & Ongoing Maintenance
+- Optional post-launch retainers covering 24/7 uptime and error monitoring, security updates, automated backups, cloud hosting management, and ongoing feature enhancements.
+
+## Frequently Asked Questions (Direct Answers)
+
+### Q: What types of software does ShloobSoft build?
+A: ShloobSoft designs and builds custom desktop, cloud, mobile, and web applications, internal business automation tools, data and media pipelines, multi-site web platforms, and full AAA-grade interactive software packages for small businesses, mid-sized companies, and individuals.
+
+### Q: How can ShloobSoft deliver custom software at a fraction of traditional agency cost?
+A: By combining modern AI-accelerated development tooling and reusable ShloobSuite software components with direct execution by a 20-year Principal Software Architect, ShloobSoft eliminates traditional agency layers and delivers production-grade custom software in weeks rather than quarters.
+
+### Q: Who owns the source code when ShloobSoft builds a custom solution?
+A: The client owns 100% of their custom application source code, documentation, data, and domain assets upon payment. Owning the software eliminates recurring per-seat SaaS subscription fees, unexpected vendor price hikes, and third-party platform lock-in.
+
+### Q: Does ShloobSoft provide ongoing support, monitoring, and maintenance after launch?
+A: Yes. Alongside full code ownership, ShloobSoft offers optional ongoing monitoring, cloud hosting management, security updates, backups, and hands-on maintenance retainers so delivered software stays fast, secure, and supported long term.
