@@ -493,41 +493,95 @@
   <!-- Contact / Footer Section -->
   <footer id="contact" class="py-20 bg-brand-950 text-white border-t border-slate-800">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5 lg:pt-2">
           <div class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-2">Get In Touch</div>
           <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight mb-4">
             Have an Idea or Workflow Ready to Build?
           </h2>
           <p class="text-slate-300 leading-relaxed mb-8">
-            Whether you are a business owner looking to replace costly subscriptions, a team needing custom automation or web infrastructure, or an individual with a software or game idea, reach out directly to talk through options and pricing.
+            Whether you are a business owner looking to replace costly subscriptions, a team needing custom automation or web infrastructure, or an individual with a software or game idea, send a quick note right here to talk through options and pricing.
           </p>
-          <div class="space-y-3 text-sm">
+          <div class="space-y-3.5 text-sm">
             <div class="flex items-center gap-3">
-              <span class="text-slate-400 w-24">Principal:</span>
+              <span class="text-slate-400 w-24 shrink-0">Principal:</span>
               <span class="font-semibold text-white">Tobias Brousil, Founder &amp; Principal Architect</span>
             </div>
             <div class="flex items-center gap-3">
-              <span class="text-slate-400 w-24">Location:</span>
+              <span class="text-slate-400 w-24 shrink-0">Location:</span>
               <span class="text-slate-200">San Marcos, CA (Serving Clients Nationwide)</span>
             </div>
-            <div class="flex items-center gap-3">
-              <span class="text-slate-400 w-24">Inquiries:</span>
+            <div class="flex flex-wrap items-center gap-2.5">
+              <span class="text-slate-400 w-24 shrink-0">Inquiries:</span>
               <a href="mailto:inquiry@shloobsoft.net" class="font-semibold text-blue-400 hover:underline">inquiry@shloobsoft.net</a>
+              <button type="button" onclick="copyInquiryEmail(this)" class="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-slate-200 cursor-pointer transition">
+                Copy Email
+              </button>
             </div>
             <div class="flex items-center gap-3">
-              <span class="text-slate-400 w-24">Web:</span>
+              <span class="text-slate-400 w-24 shrink-0">Web:</span>
               <span class="text-slate-200">https://shloobsoft.net</span>
             </div>
           </div>
+
+          <div class="mt-8 p-4 rounded-xl bg-slate-900/70 border border-slate-800 text-xs text-slate-400 leading-relaxed">
+            <strong class="text-slate-200">Direct Principal Response:</strong> Every message goes straight to Tobias Brousil, with no commissioned sales reps or account-manager handoffs.
+          </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8">
-          <h3 class="font-display font-bold text-xl mb-2">Start a Direct Conversation</h3>
-          <p class="text-xs text-slate-400 mb-6">No sales intermediaries: you speak directly with the Principal Architect building your software.</p>
-          <a href="mailto:inquiry@shloobsoft.net?subject=Custom%20Software%20Inquiry%20for%20ShloobSoft" class="block w-full text-center py-4 px-6 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-lg shadow-blue-600/20 transition">
-            Email inquiry@shloobsoft.net
-          </a>
+        <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/25">
+          <h3 class="font-display font-bold text-xl mb-1.5">Start a Direct Conversation</h3>
+          <p class="text-xs text-slate-400 mb-6">Share as much or as little detail as you have today. We typically reply within one business day.</p>
+
+          <form id="shloobsoft-contact-form" class="space-y-4" novalidate>
+            <!-- Anti-spam honeypot (hidden from real visitors and screen readers) -->
+            <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+              <label for="ss-honey">Leave this field blank</label>
+              <input type="text" id="ss-honey" name="_honey" tabindex="-1" autocomplete="off" />
+            </div>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="cf-name" class="block text-xs font-semibold text-slate-300 mb-1.5">Your Name <span class="text-blue-400">*</span></label>
+                <input type="text" id="cf-name" name="name" required placeholder="Jane Smith" class="w-full rounded-xl bg-slate-950 border border-slate-800 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition" />
+              </div>
+              <div>
+                <label for="cf-email" class="block text-xs font-semibold text-slate-300 mb-1.5">Email Address <span class="text-blue-400">*</span></label>
+                <input type="email" id="cf-email" name="email" required placeholder="jane@company.com" class="w-full rounded-xl bg-slate-950 border border-slate-800 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="cf-company" class="block text-xs font-semibold text-slate-300 mb-1.5">Company or Organization <span class="text-slate-500 font-normal">(Optional)</span></label>
+                <input type="text" id="cf-company" name="company" placeholder="Acme Co. or Personal Project" class="w-full rounded-xl bg-slate-950 border border-slate-800 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition" />
+              </div>
+              <div>
+                <label for="cf-scope" class="block text-xs font-semibold text-slate-300 mb-1.5">What Are You Looking to Build?</label>
+                <select id="cf-scope" name="project_scope" class="w-full rounded-xl bg-slate-950 border border-slate-800 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500 transition">
+                  <option value="Custom Business Software Application">Custom Business Software Application</option>
+                  <option value="Workflow Automation or Internal Tooling">Workflow Automation or Internal Tooling</option>
+                  <option value="Web Platform or Multi-Site Architecture">Web Platform or Multi-Site Architecture</option>
+                  <option value="AAA Interactive Software or Game Package">AAA Interactive Software or Game Package</option>
+                  <option value="Ongoing Support, Monitoring & Maintenance">Ongoing Support, Monitoring &amp; Maintenance</option>
+                  <option value="Individual / Personal Software Idea">Individual / Personal Software Idea</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="cf-message" class="block text-xs font-semibold text-slate-300 mb-1.5">Brief Project Summary <span class="text-blue-400">*</span></label>
+              <textarea id="cf-message" name="message" rows="4" required placeholder="Tell us a bit about the problem you want to solve, the workflow you want to replace, or the product you want to build..." class="w-full rounded-xl bg-slate-950 border border-slate-800 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition"></textarea>
+            </div>
+
+            <button type="submit" id="cf-submit-btn" class="w-full py-3.5 px-6 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold shadow-lg shadow-blue-600/20 cursor-pointer transition">
+              Send Project Inquiry
+            </button>
+
+            <div id="cf-feedback" class="hidden rounded-xl p-4 text-xs leading-relaxed"></div>
+          </form>
         </div>
       </div>
 
@@ -540,6 +594,128 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      const pageLoadedAt = performance.now();
+
+      function copyWithFallback(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          return navigator.clipboard.writeText(text).then(() => true).catch(() => legacyCopy(text));
+        }
+        return Promise.resolve(legacyCopy(text));
+      }
+
+      function legacyCopy(text) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        let ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        return ok;
+      }
+
+      window.copyInquiryEmail = async function(btn) {
+        await copyWithFallback('inquiry@shloobsoft.net');
+        const orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('border-emerald-500', 'text-emerald-300');
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.classList.remove('border-emerald-500', 'text-emerald-300');
+        }, 2500);
+      };
+
+      const form = document.getElementById('shloobsoft-contact-form');
+      const submitBtn = document.getElementById('cf-submit-btn');
+      const feedback = document.getElementById('cf-feedback');
+
+      function showWebmailFallback(subject, body, reasonText) {
+        const encSub = encodeURIComponent(subject);
+        const encBody = encodeURIComponent(body);
+        const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=inquiry@shloobsoft.net&su=' + encSub + '&body=' + encBody;
+        const outlookUrl = 'https://outlook.office.com/mail/deeplink/compose?to=inquiry@shloobsoft.net&subject=' + encSub + '&body=' + encBody;
+        const mailtoUrl = 'mailto:inquiry@shloobsoft.net?subject=' + encSub + '&body=' + encBody;
+
+        feedback.className = 'block rounded-xl p-4 text-xs leading-relaxed bg-slate-950 border border-blue-500/40 text-slate-200 space-y-3';
+        feedback.innerHTML =
+          '<div class="font-semibold text-blue-300">' + reasonText + '</div>' +
+          '<div class="flex flex-wrap gap-2">' +
+            '<a href="' + gmailUrl + '" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold transition">Send via Gmail Web</a>' +
+            '<a href="' + outlookUrl + '" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold border border-slate-700 transition">Send via Outlook Web</a>' +
+            '<a href="' + mailtoUrl + '" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold border border-slate-700 transition">Default Mail App</a>' +
+            '<button type="button" id="cf-copy-draft" class="px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white font-semibold cursor-pointer transition">Copy Message &amp; Email</button>' +
+          '</div>';
+
+        const copyBtn = document.getElementById('cf-copy-draft');
+        if (copyBtn) {
+          copyBtn.onclick = async function() {
+            await copyWithFallback('To: inquiry@shloobsoft.net\nSubject: ' + subject + '\n\n' + body);
+            copyBtn.textContent = 'Copied Full Message!';
+          };
+        }
+      }
+
+      if (form) {
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const honey = document.getElementById('ss-honey').value;
+          if (honey || (performance.now() - pageLoadedAt) < 1200) {
+            feedback.className = 'block rounded-xl p-4 text-xs bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-semibold';
+            feedback.textContent = 'Thank you! Your inquiry has been received.';
+            form.reset();
+            return;
+          }
+
+          const name = document.getElementById('cf-name').value.trim();
+          const email = document.getElementById('cf-email').value.trim();
+          const company = document.getElementById('cf-company').value.trim();
+          const scope = document.getElementById('cf-scope').value;
+          const message = document.getElementById('cf-message').value.trim();
+
+          if (!name || !email || !message || email.indexOf('@') === -1) {
+            feedback.className = 'block rounded-xl p-4 text-xs bg-amber-500/15 border border-amber-500/30 text-amber-300 font-semibold';
+            feedback.textContent = 'Please enter your name, a valid email address, and a brief note about your project.';
+            return;
+          }
+
+          const subject = 'ShloobSoft Inquiry (' + scope + ') from ' + name;
+          const formattedBody = 'Name: ' + name + '\nEmail: ' + email + (company ? '\nCompany: ' + company : '') + '\nScope: ' + scope + '\n\nProject Summary:\n' + message;
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending Inquiry...';
+
+          try {
+            const fd = new FormData(form);
+            fd.append('_subject', subject);
+            const resp = await fetch('https://formsubmit.co/ajax/inquiry@shloobsoft.net', {
+              method: 'POST',
+              headers: { 'Accept': 'application/json' },
+              body: fd
+            });
+            const data = await resp.json();
+            if (resp.ok && (data.success === 'true' || data.success === true)) {
+              feedback.className = 'block rounded-xl p-4 text-xs bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-semibold';
+              feedback.textContent = 'Thank you, ' + name + '! Your project inquiry has been sent to Tobias at ShloobSoft. We will follow up shortly.';
+              form.reset();
+            } else {
+              showWebmailFallback(subject, formattedBody, 'Your message is formatted and ready! Choose your preferred one-click send option below:');
+            }
+          } catch (err) {
+            showWebmailFallback(subject, formattedBody, 'Your message is formatted and ready! Choose your preferred one-click send option below:');
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Project Inquiry';
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
