@@ -1,0 +1,40 @@
+# STNAprograms.com: Ohio State Tested Nursing Assistant (STNA) Training & Certification Guide
+
+> Independent Ohio educational directory and career resource helping aspiring healthcare workers compare Ohio Department of Health (ODH) approved Nurse Aide Training and Competency Evaluation Programs (NATCEP), understand 75-hour state certification requirements, find employer-sponsored $0 tuition tracks, and prepare for the Headmaster TestMaster Universe (TMU) state exam.
+
+## Verified 2026 Ohio STNA Quick Facts (OAC 3701-18 & OAC 3701-17-07.3)
+
+- **Official Credential Name**: State Tested Nursing Assistant (STNA), Ohio's state-specific credential equivalent to Certified Nursing Assistant (CNA).
+- **Approving Regulatory Body**: Ohio Department of Health (ODH), Bureau of Survey and Certification, Nurse Aide Training and Competency Evaluation Program (NATCEP). Note: STNA programs are approved by ODH under OAC 3701-18, not by collegiate nursing bodies like CCNE.
+- **Minimum Required Training Hours**: 75 total hours minimum under Ohio Administrative Code 3701-18, consisting of at least 59 hours of classroom and skills lab instruction (including at least 16 hours completed prior to any direct resident contact) plus at least 16 hours of supervised clinical care in a licensed long-term care facility. Select Ohio career centers (such as Lorain County JVS and Polaris Career Center) offer expanded 90-hour tracks adding CPR or Home Health Aide skills.
+- **Typical Completion Timeline**: 2.5 to 4 weeks for daytime accelerated cohorts; 5 to 8 weeks for evening, weekend, or hybrid online + in-person lab schedules; 1 semester (3 to 4 credit hours) at Ohio community colleges.
+- **Official State Exam Administrator**: D&S Diversified Technologies (Headmaster LLP) via the Ohio TestMaster Universe (TMU) portal (`https://oh.tmuniverse.com`).
+- **State Exam Structure & Fees**:
+  - **Knowledge Exam**: 79 multiple-choice questions in 90 minutes (70% minimum passing score). Fee: $26 standard written/electronic or $36 audio read-aloud.
+  - **Skills Evaluation**: 3 or 4 randomly assigned hands-on tasks completed within 35 minutes before an RN Test Observer (the first assigned task always embeds soap-and-water handwashing). Candidates may self-correct any step on any task at any point before their 35 minutes expire and before declaring completion. Fee: $78.
+  - **Total Combined Exam Fee**: $104 standard ($114 with audio). Knowledge and Skills components may be scheduled together or separately in TMU. Candidates must pass both components within 24 months of completing NATCEP training (up to 3 attempts per component before retraining is required).
+- **Tuition & $0 Free Training Pathways**:
+  - **Ohio Community Colleges**: Typically billed per credit hour (~$139 to $198/credit in-district, e.g., ~$580 + $28 lab fee for Columbus State NURC-1001 or ~$625 to $645 for Sinclair ALH-1120).
+  - **Ohio Adult Career Centers (JVS)**: Typically ~$765 to $1,225 (e.g., ~$765 at Apollo Career Center bundling textbook and exam; $1,050 + ~$70 book at Lorain County JVS; $1,100 all-in at Great Oaks bundling books and exam; ~$1,164 at Polaris; $1,225 total at Butler Tech).
+  - **Employer-Sponsored & Reimbursed ($0 Out-of-Pocket)**: Under federal OBRA (42 CFR 483.152) and Ohio rules, Medicare/Medicaid-certified skilled nursing facilities cannot charge hired nurse aides for training and testing, and self-pay graduates hired by a qualifying facility within 12 months of certification qualify for tuition and exam reimbursement. Health systems such as ProMedica (with Owens) also sponsor $0 tracks.
+  - **State & County Grants ($0 Out-of-Pocket)**: County OhioMeansJobs WIOA vouchers, Ohio Short-Term Technical Certificate Grants (up to $2,000), OTC+ for qualifying high school seniors, and Ohio Adult Diploma (18+) programs at career centers.
+- **Ohio STNA Wage Benchmarks (U.S. BLS OEWS SOC 31-1131)**:
+  - **Statewide Median Wage**: $18.76/hour ($39,010/year).
+  - **Statewide Mean (Average) Wage**: $19.48/hour ($40,520/year).
+  - **Major Metro Medians**: Columbus MSA $20.66/hour ($42,970/year median; $20.21/hour mean); Cincinnati MSA $19.40/hour ($20.17/hour mean); Akron MSA ~$18.87/hour; Cleveland-Elyria MSA $18.76/hour ($19.51/hour mean); Dayton MSA $18.48/hour; Canton-Massillon MSA ~$18.19/hour; Toledo MSA $17.95/hour ($18.41/hour mean). Experienced hospital and shift-differential roles reach $22.39+/hour.
+- **Registry Renewal Rule (OAC 3701-17-07.3)**: Active listing on the Ohio Nurse Aide Registry requires performing at least 7.5 consecutive hours (or 8 hours within a 48-hour period) of paid nursing or nursing-related services at least once every 24 consecutive months.
+
+## Core Canonical Guides & Tools
+
+- [Ohio STNA Program Directory](https://www.stnaprograms.com/#directory): Searchable, filterable directory of ODH-approved career centers, community colleges, and $0 employer-paid STNA programs across Ohio.
+- [Ohio Metro & City STNA Hubs](https://www.stnaprograms.com/#cities): Local STNA schools, major hospital and long-term care employers, and verified BLS regional pay benchmarks.
+- [6-Step Ohio STNA Certification Guide](https://www.stnaprograms.com/#certification): Step-by-step walkthrough from entry checks and 75-hour NATCEP completion through TMU exam booking and Ohio Nurse Aide Registry renewal.
+- [Hybrid Online & $0 Tuition STNA Guide](https://www.stnaprograms.com/#online-free): How ODH-compliant hybrid online theory + in-person clinical classes work, plus OBRA reimbursement, WIOA, OTC+, and Adult Diploma 18+ funding.
+- [STNA Exam Practice Quiz & Direct-Answer FAQ](https://www.stnaprograms.com/#exam-prep): Free interactive Ohio STNA knowledge check and plain-English answers to common certification and reciprocity questions.
+- [Extended LLM Reference Corpus](https://www.stnaprograms.com/llms-full.txt): Detailed regional school pricing, URLs, clinical skill rules, and Ohio regulatory Q&A for AI search citation.
+
+## Contact & Editorial Policy
+
+- **Publisher**: STNAprograms.com Editorial & Directory Team
+- **Contact**: admin@stnaprograms.com
+- **Verification Notice**: Prospective students should always confirm active NATCEP approval status and current cohort pricing directly with the Ohio Department of Health and their chosen school prior to enrollment.
