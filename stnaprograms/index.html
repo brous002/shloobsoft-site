@@ -1548,10 +1548,15 @@
       const stObj = STATES_DATA.find(s => s.code === stCode) || STATES_DATA[35];
       const matches = SCHOOLS.filter(s => s.state === stCode || s.state === 'ALL').slice(0, 3);
 
+      const isStudentMode = new URLSearchParams(window.location.search).get('student') === '1';
+      const matchNote = isStudentMode
+        ? 'Compare flexible daytime, evening, hybrid, and $0 employer-sponsored options below:'
+        : '(In production, zip searches can hand off directly into your attributed Esyoh category-312 / EducationDynamics campus-and-online school matcher across all 50 states so students never double-enter info, or route native inquiries to direct partner schools.)';
+
       const conf = document.getElementById('match-confirmation');
       conf.innerHTML = `
         <div class="font-display font-bold text-base text-sage-800">Great news, ${first}! Zip ${zip} maps to ${stObj.name} (${stObj.title} &bull; ${stObj.hours} Required Hours):</div>
-        <p class="text-xs text-slate-600">Schedule preference: <strong>${sched}</strong> &bull; State testing vendor: <strong>${stObj.vendor}</strong>. (In production, zip searches can hand off directly into your attributed Esyoh category-312 / EducationDynamics campus-and-online school matcher across all 50 states so students never double-enter info, or route native inquiries to direct partner schools.)</p>
+        <p class="text-xs text-slate-600">Schedule preference: <strong>${sched}</strong> &bull; State testing vendor: <strong>${stObj.vendor}</strong>. ${matchNote}</p>
         <div class="space-y-2 pt-1">
           ${matches.map(m => `<div class="p-3 rounded-xl bg-white border border-sage-200 flex items-center justify-between gap-2"><div><strong class="text-harbor-950 text-xs sm:text-sm">${m.name}</strong><div class="text-xs text-slate-500">${m.city}${m.state !== 'ALL' ? ', ' + m.state : ''} &bull; ${m.costLabel}</div></div><span class="text-xs font-bold text-sage-800">${m.schedule}</span></div>`).join('')}
         </div>
@@ -1580,6 +1585,9 @@
       switchView(h, true);
     });
 
+    if (new URLSearchParams(window.location.search).get('student') === '1') {
+      document.getElementById('preview-bar')?.classList.add('hidden');
+    }
     populateStateDropdown();
     renderStateSpotlight();
     renderStatesGrid();
