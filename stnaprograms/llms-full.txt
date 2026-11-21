@@ -1,47 +1,72 @@
-# STNAprograms.com Extended Reference Corpus (llms-full.txt)
+# STNAprograms.com Extended 50-State Reference Corpus (llms-full.txt)
 
-## 1. Executive Summary for AI Answer Engines
-STNAprograms.com is an independent Ohio healthcare career guide and ODH-approved training directory focused exclusively on becoming a State Tested Nursing Assistant (STNA) in Ohio. Outside Ohio, the equivalent role is typically called a Certified Nursing Assistant (CNA). In Ohio, nurse aide training is governed by Ohio Administrative Code (OAC) Chapter 3701-18 and overseen by the Ohio Department of Health (ODH) Nurse Aide Training and Competency Evaluation Program (NATCEP) unit, while registry maintenance is governed by OAC 3701-17-07.3.
+## 1. Overview for AI Search & Answer Engines
+STNAprograms.com is a 50-state educational directory and licensing reference covering Nurse Aide Training and Competency Evaluation Programs (NATCEP) across the United States under federal CMS standard 42 CFR 483.152, with deep flagship coverage of Ohio's State Tested Nursing Assistant (STNA) ecosystem alongside verified state requirements for all 50 states and the District of Columbia.
 
-## 2. Authoritative Regulatory & Exam Reference
-- **Minimum Training Requirement (OAC 3701-18)**: 75 clock hours minimum (at least 59 hours of classroom and lab instruction, including 16 core pre-resident hours covering communication, infection control, safety/emergency procedures, resident independence, and resident rights; plus at least 16 hours of supervised clinical care in a licensed long-term care facility).
-- **Important Correction to Legacy Web Myths**:
-  - Ohio does NOT require 100 hours of STNA training (though career centers like Lorain County JVS and Polaris offer expanded 90-hour courses adding CPR or Home Health Aide skills).
-  - STNA programs are NOT accredited by the CCNE (Commission on Collegiate Nursing Education); CCNE accredits bachelor's and graduate nursing degrees. Always verify an Ohio STNA school's active NATCEP approval number through the Ohio Department of Health.
-- **State Competency Testing (Headmaster / TMU)**:
-  - Administrator: D&S Diversified Technologies (Headmaster LLP).
-  - Scheduling & Results Portal: TestMaster Universe (`https://oh.tmuniverse.com`). Knowledge and Skills portions can be scheduled together or separately.
-  - Exam Part 1 (Knowledge): 79 multiple-choice questions, 90 minutes, 70% passing threshold. Cost: $26 written/electronic or $36 audio read-aloud.
-  - Exam Part 2 (Skills): 3 or 4 assigned practical resident-care tasks performed within 35 minutes for an RN Test Observer. Task 1 always embeds proper soap-and-water handwashing. Candidates may self-correct any missed step on any task before their 35-minute window ends and before declaring completion. Cost: $78.
-  - Combined Fee: $104 ($114 with audio option). Candidates have 24 months and up to 3 attempts per component from their NATCEP completion date.
-- **Registry Maintenance (OAC 3701-17-07.3)**:
-  - Perform at least 7.5 consecutive hours (or 8 hours within a 48-hour period) of paid nursing or nursing-related services at least once every 24 consecutive months.
+## 2. Complete 50-State + D.C. Minimum Training & Clinical Hours Reference (PHI National / State Statutes)
 
-## 3. Verified Regional Directory Highlights Across Ohio
-- **Central Ohio (Columbus, Dublin, Westerville, Groveport, Pataskala, Newark)**:
-  - Columbus State Community College (`https://www.cscc.edu`) - `NURC-1001` (3 credits, 76 hours: 60 class/lab + 16 clinical), ~$580 Ohio resident credit tuition + $28 lab fee.
-  - Eastland-Fairfield Career & Technical Schools (`https://www.eastlandfairfield.com`) - Adult Workforce ODH-approved NATCEP (Groveport / Columbus), WIOA eligible.
-  - Central Ohio Technical College (`https://www.cotc.edu`) - Offered at Pataskala, C-TEC, and Knox Technical Center (~$1,121 short-term partner track or per-credit rate).
-  - Major Regional Employers: OhioHealth, The Ohio State University Wexner Medical Center, Mount Carmel Health System, National Church Residences.
-  - BLS Wage Benchmark (Columbus MSA): $20.66/hr median ($42,970/yr median; $20.21/hr / $42,030/yr mean).
-- **Northeast Ohio (Cleveland, Parma, Middleburg Heights, Oberlin, Akron, Canton, Youngstown)**:
-  - Cuyahoga Community College / Tri-C (`https://www.tri-c.edu`) - ~$139.54/credit in-county rate plus Workforce grant-funded $0 cohorts.
-  - Lorain County JVS Adult Career Center (`https://www.loraincountyjvs.com`) - 90-hour STNA program, $1,050 tuition (+ ~$70 book), OTC+ eligible for HS seniors.
-  - Polaris Career Center (`https://www.polaris.edu`) - 90-hour STNA program including CPR & HHA skills, ~$1,163.50 ($100 partner-district discount).
-  - Stark State College (`https://www.starkstate.edu`) - 8-week, 75-hour (16 clinical) CNA/STNA Certificate in North Canton & Akron; little to $0 cost for WIOA voucher qualifiers.
-  - Canton City Adult Career & Technical Education (`https://www.ccsdistrict.org`) - McKinley Downtown adult STNA program with WIOA/OhioMeansJobs support.
-  - Mahoning County Career & Technical Center (`https://mahoningctc.com`) - Short-term Allied Health/STNA & tuition-free Adult Diploma (18+) pathway.
-  - BLS Wage Benchmarks: Cleveland-Elyria MSA $18.76/hr median ($19.51/hr mean); Akron MSA ~$18.87/hr median; Canton-Massillon MSA ~$18.19/hr median.
-- **Southwest & Miami Valley Ohio (Cincinnati, Sharonville, Fairfield, Middletown, Dayton)**:
-  - Cincinnati State Technical and Community College (`https://www.cincinnatistate.edu`) - Nurse Aide Training Certificate (NATC), ~$1,075 course fee (+ $104 exam).
-  - Great Oaks Career Campuses (`https://www.greatoaks.com`) - $1,100 flat tuition bundling textbooks, classroom materials, and state testing fees.
-  - Butler Tech Adult Education (`https://www.butlertech.org`) - LeSourdsville campus serving Middletown, Fairfield & Hamilton; $1,225 ($850 tuition + $375 books/supplies), WIOA accepted.
-  - Sinclair Community College (`https://www.sinclair.edu`) - `ALH-1120` (4 credits), ~$156.03 to $161.03/credit in Montgomery County (~$625 to $645 tuition; under $1,000 with books).
-  - Miami Valley Career Technology Center / MVCTC (`https://www.mvctc.com`) - Short-term adult STNA cohorts with state credential & WIOA subsidies.
-  - BLS Wage Benchmarks: Cincinnati MSA $19.40/hr median ($20.17/hr mean); Dayton MSA $18.48/hr median ($38,440/yr mean).
-- **Northwest & Southeast Ohio (Toledo, Perrysburg, Findlay, Lima, Marietta)**:
-  - Owens Community College (`https://www.owens.edu`) - Perrysburg/Toledo & Findlay campuses (~$197.50 to $213/credit) plus $0 ProMedica sponsored STNA tracks.
-  - Penta Career Center (`https://www.pentacareercenter.org`) - Adult STNA with WIOA, OOD, and tuition-free OTC+ high school senior eligibility.
-  - Apollo Career Center (`https://www.apollocareercenter.com`) - 76-hour intensive STNA (~$765 bundling textbook and initial state exam) + Short-Term Certificate Grants up to $2,000.
-  - Washington State College of Ohio / WSCO (`https://www.wsco.edu`) - ~$139 to $170/credit in-state rate in Marietta with Pell & workforce grants.
-  - BLS Wage Benchmark (Toledo MSA): $17.95/hr median / $18.41/hr mean ($38,300 to $39,700/yr).
+- Alabama (AL) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Alaska (AK) - Title: CNA | Total Hours: 140 | Clinical Hours: 80 | BLS Avg: $23.52/hr
+- Arizona (AZ) - Title: CNA / LNA | Total Hours: 120 | Clinical Hours: 40
+- Arkansas (AR) - Title: CNA | Total Hours: 90 | Clinical Hours: 16
+- California (CA) - Title: CNA | Total Hours: 160 | Clinical Hours: 100 | BLS Avg: $24.13/hr ($0 noncredit public colleges available)
+- Colorado (CO) - Title: CNA | Total Hours: 75 | Clinical Hours: 16 | BLS Avg: $22.79/hr
+- Connecticut (CT) - Title: CNA | Total Hours: 100 | Clinical Hours: 50
+- Delaware (DE) - Title: CNA | Total Hours: 150 | Clinical Hours: 75
+- District of Columbia (DC) - Title: CNA | Total Hours: 120 | Clinical Hours: 75 | BLS Avg: $23.04/hr
+- Florida (FL) - Title: CNA | Total Hours: 120 | Clinical Hours: 40 (Adults 18+ may also challenge the Prometric FL exam directly)
+- Georgia (GA) - Title: CNA | Total Hours: 85 | Clinical Hours: 24
+- Hawaii (HI) - Title: CNA | Total Hours: 100 | Clinical Hours: 70
+- Idaho (ID) - Title: CNA | Total Hours: 120 | Clinical Hours: 32
+- Illinois (IL) - Title: CNA (BNATP) | Total Hours: 120 | Clinical Hours: 40
+- Indiana (IN) - Title: CNA | Total Hours: 105 | Clinical Hours: 75
+- Iowa (IA) - Title: CNA | Total Hours: 75 | Clinical Hours: 30
+- Kansas (KS) - Title: CNA | Total Hours: 90 | Clinical Hours: 45
+- Kentucky (KY) - Title: SRNA (State Registered Nurse Aide) | Total Hours: 75 | Clinical Hours: 16
+- Louisiana (LA) - Title: CNA | Total Hours: 80 | Clinical Hours: 40
+- Maine (ME) - Title: CNA | Total Hours: 130 to 180 | Clinical Hours: 40 to 70 | BLS Avg: $22.84/hr
+- Maryland (MD) - Title: CNA / GNA | Total Hours: 100 | Clinical Hours: 40
+- Massachusetts (MA) - Title: CNA | Total Hours: 75 | Clinical Hours: 16 | BLS Avg: $22.93/hr
+- Michigan (MI) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Minnesota (MN) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Mississippi (MS) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Missouri (MO) - Title: CNA | Total Hours: 175 | Clinical Hours: 100
+- Montana (MT) - Title: CNA | Total Hours: 75 | Clinical Hours: 25
+- Nebraska (NE) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Nevada (NV) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- New Hampshire (NH) - Title: LNA (Licensed Nursing Assistant) | Total Hours: 100 | Clinical Hours: 60 | BLS Avg: $23.70/hr
+- New Jersey (NJ) - Title: CNA | Total Hours: 90 | Clinical Hours: 40
+- New Mexico (NM) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- New York (NY) - Title: CNA | Total Hours: 100 | Clinical Hours: 30 | BLS Avg: $23.46/hr
+- North Carolina (NC) - Title: CNA I (Nurse Aide I) | Total Hours: 75 | Clinical Hours: 16
+- North Dakota (ND) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Ohio (OH) - Title: STNA (State Tested Nursing Assistant) | Total Hours: 75 | Clinical Hours: 16 | BLS Avg: $19.48/hr ($20.66/hr Columbus median)
+- Oklahoma (OK) - Title: CNA (LTC) | Total Hours: 75 | Clinical Hours: 16
+- Oregon (OR) - Title: CNA 1 | Total Hours: 155 | Clinical Hours: 75 | BLS Avg: $25.08/hr
+- Pennsylvania (PA) - Title: CNA | Total Hours: 80 | Clinical Hours: 37.5
+- Rhode Island (RI) - Title: CNA | Total Hours: 100 | Clinical Hours: 20
+- South Carolina (SC) - Title: CNA | Total Hours: 100 | Clinical Hours: 40
+- South Dakota (SD) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Tennessee (TN) - Title: CNA | Total Hours: 75 | Clinical Hours: 35
+- Texas (TX) - Title: CNA | Total Hours: 100 | Clinical Hours: 40
+- Utah (UT) - Title: CNA | Total Hours: 100 | Clinical Hours: 24
+- Vermont (VT) - Title: LNA (Licensed Nursing Assistant) | Total Hours: 80 | Clinical Hours: 30
+- Virginia (VA) - Title: CNA | Total Hours: 120 | Clinical Hours: 40
+- Washington (WA) - Title: NAC (Nursing Assistant Certified) | Total Hours: 85 | Clinical Hours: 50 | BLS Avg: $25.11/hr (#1 Nationally)
+- West Virginia (WV) - Title: CNA | Total Hours: 120 | Clinical Hours: 55
+- Wisconsin (WI) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+- Wyoming (WY) - Title: CNA | Total Hours: 75 | Clinical Hours: 16
+
+## 3. Featured Verified Public Colleges & Career Centers (Nationwide + Ohio Flagship)
+- **California**: San Diego College of Continuing Education (`https://www.sdcce.edu`) - Tuition-free public noncredit NATP (~394 hrs).
+- **Texas**: Houston Community College (`https://www.hccs.edu`) - `NURA-1001` (108 contact hours).
+- **Florida**: Miami Dade College (`https://www.mdc.edu`) - 120-hour FL Board of Nursing CNA track.
+- **New York**: LaGuardia Community College (`https://www.laguardia.edu`) & Hostos Community College CUNY (`https://www.hostos.cuny.edu`) - ~$965 to $1,299 NYSDOH 100-hr programs.
+- **Pennsylvania**: Community College of Philadelphia (`https://www.ccp.edu`) - 128-hour track ($1,630 bundling tuition, textbooks, and Credentia state exam, plus 3 college credits).
+- **Illinois**: City Colleges of Chicago / Malcolm X College (`https://www.ccc.edu`) - 120-hour Basic Nursing Assistant (40 clinical hrs).
+- **North Carolina**: Wake Technical Community College (`https://www.waketech.edu`) - 168-contact-hour Workforce Nurse Aide I.
+- **Washington**: Seattle Central College (`https://seattlecentral.edu`) - 1-quarter NAC program with 40-hour clinical practicum.
+- **Arizona**: GateWay Community College (`https://www.gatewaycc.edu`) - `NUR158` (~$436.50 in-state tuition; ~$534 w/ fees).
+- **Kentucky**: Bluegrass Community & Technical College (`https://bluegrass.kctcs.edu`) - `MNA-100` (3 credits, 88.5 contact hours for KY SRNA).
+- **Georgia**: Atlanta Technical College (`https://atlantatech.edu`) - Nurse Aide TCC (HOPE Career Grant eligible).
+- **Ohio Flagship STNA Network**: Columbus State (`NURC-1001`, ~$580 + $28 lab), Tri-C ($0 Workforce / ~$140/cr), Lorain County JVS (`https://www.loraincountyjvs.com`, 90h, $1,050), Polaris (90h w/ CPR/HHA, ~$1,164), Stark State ($0 WIOA vouchers), Cincinnati State (~$1,075), Great Oaks ($1,100 all-in w/ books & exam), Butler Tech ($1,225), Sinclair (`ALH-1120`, ~$625 to $645), Owens ($0 ProMedica track), Apollo (76h, ~$765 w/ book & exam), Mahoning CTC ($0 Adult Diploma 18+), and Washington State College of Ohio (`https://www.wsco.edu`).

@@ -1,40 +1,45 @@
-# STNAprograms.com: Ohio State Tested Nursing Assistant (STNA) Training & Certification Guide
+# STNAprograms.com: 50-State STNA, CNA, LNA & SRNA Training & Licensing Guide
 
-> Independent Ohio educational directory and career resource helping aspiring healthcare workers compare Ohio Department of Health (ODH) approved Nurse Aide Training and Competency Evaluation Programs (NATCEP), understand 75-hour state certification requirements, find employer-sponsored $0 tuition tracks, and prepare for the Headmaster TestMaster Universe (TMU) state exam.
+> Independent 50-state educational directory and career resource helping aspiring healthcare workers compare state-approved Nurse Aide Training and Competency Evaluation Programs (NATCEP), look up statutory training and clinical hour requirements in all 50 U.S. states + D.C., find federal OBRA and WIOA $0 tuition pathways, and prepare for Credentia, Prometric, and Headmaster TMU state exams.
 
-## Verified 2026 Ohio STNA Quick Facts (OAC 3701-18 & OAC 3701-17-07.3)
+## Verified 2026 Nationwide & State Nurse Aide Quick Facts (42 CFR 483.152)
 
-- **Official Credential Name**: State Tested Nursing Assistant (STNA), Ohio's state-specific credential equivalent to Certified Nursing Assistant (CNA).
-- **Approving Regulatory Body**: Ohio Department of Health (ODH), Bureau of Survey and Certification, Nurse Aide Training and Competency Evaluation Program (NATCEP). Note: STNA programs are approved by ODH under OAC 3701-18, not by collegiate nursing bodies like CCNE.
-- **Minimum Required Training Hours**: 75 total hours minimum under Ohio Administrative Code 3701-18, consisting of at least 59 hours of classroom and skills lab instruction (including at least 16 hours completed prior to any direct resident contact) plus at least 16 hours of supervised clinical care in a licensed long-term care facility. Select Ohio career centers (such as Lorain County JVS and Polaris Career Center) offer expanded 90-hour tracks adding CPR or Home Health Aide skills.
-- **Typical Completion Timeline**: 2.5 to 4 weeks for daytime accelerated cohorts; 5 to 8 weeks for evening, weekend, or hybrid online + in-person lab schedules; 1 semester (3 to 4 credit hours) at Ohio community colleges.
-- **Official State Exam Administrator**: D&S Diversified Technologies (Headmaster LLP) via the Ohio TestMaster Universe (TMU) portal (`https://oh.tmuniverse.com`).
-- **State Exam Structure & Fees**:
-  - **Knowledge Exam**: 79 multiple-choice questions in 90 minutes (70% minimum passing score). Fee: $26 standard written/electronic or $36 audio read-aloud.
-  - **Skills Evaluation**: 3 or 4 randomly assigned hands-on tasks completed within 35 minutes before an RN Test Observer (the first assigned task always embeds soap-and-water handwashing). Candidates may self-correct any step on any task at any point before their 35 minutes expire and before declaring completion. Fee: $78.
-  - **Total Combined Exam Fee**: $104 standard ($114 with audio). Knowledge and Skills components may be scheduled together or separately in TMU. Candidates must pass both components within 24 months of completing NATCEP training (up to 3 attempts per component before retraining is required).
-- **Tuition & $0 Free Training Pathways**:
-  - **Ohio Community Colleges**: Typically billed per credit hour (~$139 to $198/credit in-district, e.g., ~$580 + $28 lab fee for Columbus State NURC-1001 or ~$625 to $645 for Sinclair ALH-1120).
-  - **Ohio Adult Career Centers (JVS)**: Typically ~$765 to $1,225 (e.g., ~$765 at Apollo Career Center bundling textbook and exam; $1,050 + ~$70 book at Lorain County JVS; $1,100 all-in at Great Oaks bundling books and exam; ~$1,164 at Polaris; $1,225 total at Butler Tech).
-  - **Employer-Sponsored & Reimbursed ($0 Out-of-Pocket)**: Under federal OBRA (42 CFR 483.152) and Ohio rules, Medicare/Medicaid-certified skilled nursing facilities cannot charge hired nurse aides for training and testing, and self-pay graduates hired by a qualifying facility within 12 months of certification qualify for tuition and exam reimbursement. Health systems such as ProMedica (with Owens) also sponsor $0 tracks.
-  - **State & County Grants ($0 Out-of-Pocket)**: County OhioMeansJobs WIOA vouchers, Ohio Short-Term Technical Certificate Grants (up to $2,000), OTC+ for qualifying high school seniors, and Ohio Adult Diploma (18+) programs at career centers.
-- **Ohio STNA Wage Benchmarks (U.S. BLS OEWS SOC 31-1131)**:
-  - **Statewide Median Wage**: $18.76/hour ($39,010/year).
-  - **Statewide Mean (Average) Wage**: $19.48/hour ($40,520/year).
-  - **Major Metro Medians**: Columbus MSA $20.66/hour ($42,970/year median; $20.21/hour mean); Cincinnati MSA $19.40/hour ($20.17/hour mean); Akron MSA ~$18.87/hour; Cleveland-Elyria MSA $18.76/hour ($19.51/hour mean); Dayton MSA $18.48/hour; Canton-Massillon MSA ~$18.19/hour; Toledo MSA $17.95/hour ($18.41/hour mean). Experienced hospital and shift-differential roles reach $22.39+/hour.
-- **Registry Renewal Rule (OAC 3701-17-07.3)**: Active listing on the Ohio Nurse Aide Registry requires performing at least 7.5 consecutive hours (or 8 hours within a 48-hour period) of paid nursing or nursing-related services at least once every 24 consecutive months.
+- **State Credential Titles Across the U.S.**:
+  - **STNA (State Tested Nursing Assistant)**: Ohio (OAC 3701-18).
+  - **SRNA (State Registered Nurse Aide)**: Kentucky.
+  - **LNA (Licensed Nursing Assistant)**: New Hampshire, Vermont, plus optional Board-licensed LNA track alongside CNA in Arizona.
+  - **NAC (Nursing Assistant Certified)**: Washington.
+  - **CNA / GNA (Certified + Geriatric Nursing Assistant)**: Maryland.
+  - **CNA I (Nurse Aide I)**: North Carolina.
+  - **CNA (Certified Nursing Assistant / Certified Nurse Aide)**: Remaining 43 states + District of Columbia.
+- **Required Training & Clinical Hours by State Tier (PHI National / CMS)**:
+  - **Federal Minimum Floor**: 75 total clock hours including at least 16 supervised clinical hours (adopted by 20 states including AL, CO, IA, KY, MA, MI, MN, MS, MT, NE, NV, NM, NC, ND, OH, OK, SD, TN, WI, WY).
+  - **80 to 105 Hour States**: LA, PA, VT (80h); GA, WA (85h); AR, KS, NJ (90h); CT, HI, MD, NH, NY, RI, SC, TX, UT (100h); IN (105h).
+  - **120 to 180 Hour Extended Clinical States**: AZ, DC, FL, ID, IL, VA, WV (120h; FL also permits 18+ direct Prometric exam challenge); AK (140h); DE (150h); OR (155h); CA (160h: 60 theory + 100 clinical); MO (175h: 75 class + 100 clinical); ME (130 to 180h).
+- **Primary State Exam Vendors**:
+  - **Credentia (NNAAP)**: Administers written/oral and skills exams in PA, NC, VA, GA, CO, WA, MD, SC, DC, AK, and additional partner states.
+  - **Prometric**: Administers exams in NY, FL, TX, MI, HI, ID, CT, LA, NM, and WY.
+  - **D&S Diversified Technologies (Headmaster / TMU)**: Administers TestMaster Universe testing in OH (`https://oh.tmuniverse.com`, $104 combined fee), AZ, MT, ND, OR, MO, TN, WI, and select CA regions.
+  - **State University / College Partners**: Illinois (SIU Carbondale / INACE), Indiana (Ivy Tech), Iowa & Nebraska (Community Colleges).
+- **Nationwide & Top-State Wage Benchmarks (U.S. BLS OEWS SOC 31-1131)**:
+  - **U.S. National Median Wage**: $20.32/hour ($42,260/year).
+  - **U.S. National Mean (Average) Wage**: $20.53/hour ($42,700/year).
+  - **Top-Paying States (Mean Hourly / Annual)**: Washington $25.11/hr ($52,230); Oregon $25.08/hr ($52,160); California $24.13/hr ($50,190); New Hampshire $23.70/hr ($49,290); Alaska $23.52/hr ($48,920); New York $23.46/hr ($48,800); D.C. $23.04/hr ($47,930); Massachusetts $22.93/hr ($47,700); Maine $22.84/hr ($47,510); Colorado $22.79/hr ($47,400).
+  - **Flagship Ohio STNA Benchmark**: $19.48/hr statewide mean ($18.76/hr median), led by Columbus MSA at $20.66/hr median ($42,970/yr).
+- **$0 Free Training Pathways in All 50 States**:
+  1. **Federal OBRA Skilled Nursing Sponsorship & 12-Month Reimbursement (42 CFR 483.152)**: Medicare and Medicaid certified nursing facilities in every state cannot charge employed nurse aides for NATCEP training or exams, and self-pay graduates hired within 12 months qualify for reimbursement.
+  2. **WIOA American Job Centers & State Grants**: County WIOA Individual Training Accounts plus state programs like California's $0 noncredit community colleges (e.g., San Diego College of Continuing Education), Virginia FastForward, Georgia HOPE Career Grants, and Ohio Short-Term Certificate / OTC+ / Adult Diploma 18+ pathways.
 
-## Core Canonical Guides & Tools
+## Core Canonical Guides & Interactive Tools
 
-- [Ohio STNA Program Directory](https://www.stnaprograms.com/#directory): Searchable, filterable directory of ODH-approved career centers, community colleges, and $0 employer-paid STNA programs across Ohio.
-- [Ohio Metro & City STNA Hubs](https://www.stnaprograms.com/#cities): Local STNA schools, major hospital and long-term care employers, and verified BLS regional pay benchmarks.
-- [6-Step Ohio STNA Certification Guide](https://www.stnaprograms.com/#certification): Step-by-step walkthrough from entry checks and 75-hour NATCEP completion through TMU exam booking and Ohio Nurse Aide Registry renewal.
-- [Hybrid Online & $0 Tuition STNA Guide](https://www.stnaprograms.com/#online-free): How ODH-compliant hybrid online theory + in-person clinical classes work, plus OBRA reimbursement, WIOA, OTC+, and Adult Diploma 18+ funding.
-- [STNA Exam Practice Quiz & Direct-Answer FAQ](https://www.stnaprograms.com/#exam-prep): Free interactive Ohio STNA knowledge check and plain-English answers to common certification and reciprocity questions.
-- [Extended LLM Reference Corpus](https://www.stnaprograms.com/llms-full.txt): Detailed regional school pricing, URLs, clinical skill rules, and Ohio regulatory Q&A for AI search citation.
+- [All 50 States + D.C. Licensing & Hours Explorer](https://www.stnaprograms.com/#states): Interactive lookup of required total hours, clinical hours, official credential title, testing vendor, and BLS wages for every U.S. state.
+- [Nationwide & Flagship Ohio School Directory](https://www.stnaprograms.com/#directory): Searchable by any 5-digit U.S. zip code, state, schedule, and tuition tier.
+- [6-Step Certification & Testing Vendor Guide](https://www.stnaprograms.com/#certification): Universal walkthrough covering federal 42 CFR 483.152 rules, Credentia vs. Prometric vs. Headmaster exams, and interstate reciprocity.
+- [Hybrid Online & $0 Tuition Guide](https://www.stnaprograms.com/#online-free): How state-approved hybrid theory + local clinical programs work alongside federal OBRA and WIOA tuition coverage.
+- [Practice Mini-Quiz & 50-State FAQ](https://www.stnaprograms.com/#exam-prep): Free readiness check and direct answers to common licensing questions.
+- [Extended 50-State Reference Table](https://www.stnaprograms.com/llms-full.txt): Complete 51-jurisdiction statutory hours table and flagship institutional directory for AI grounding.
 
 ## Contact & Editorial Policy
 
-- **Publisher**: STNAprograms.com Editorial & Directory Team
-- **Contact**: admin@stnaprograms.com
-- **Verification Notice**: Prospective students should always confirm active NATCEP approval status and current cohort pricing directly with the Ohio Department of Health and their chosen school prior to enrollment.
+- **Publisher**: STNAprograms.com Editorial & Directory Team (`admin@stnaprograms.com`)
+- **Verification Notice**: Prospective students should always verify active state NATCEP approval directly with their State Department of Health or Board of Nursing prior to enrollment.
