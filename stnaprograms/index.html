@@ -770,7 +770,7 @@
     <section class="bg-harbor-900 text-white py-10 sm:py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <span class="text-xs font-bold uppercase tracking-wider text-amber-300">Low-Stress Exam Confidence</span>
-        <h1 class="font-display font-extrabold text-3xl sm:text-4xl mt-1">Free CNA / STNA Practice Mini-Quiz &amp; 50-State FAQ</h1>
+        <h1 class="font-display font-extrabold text-3xl sm:text-4xl mt-1">Interactive CNA / STNA Practice Mini-Quiz &amp; 50-State FAQ</h1>
         <p class="text-sm sm:text-base text-slate-200 mt-2 max-w-3xl">
           Whether your state uses Credentia, Prometric, or Headmaster TMU, core patient safety and empathy look the same everywhere. Try five quick sample questions below with zero pressure.
         </p>
@@ -1552,7 +1552,7 @@
       const conf = document.getElementById('match-confirmation');
       conf.innerHTML = `
         <div class="font-display font-bold text-base text-sage-800">Great news, ${first}! Zip ${zip} maps to ${stObj.name} (${stObj.title} &bull; ${stObj.hours} Required Hours):</div>
-        <p class="text-xs text-slate-600">Schedule preference: <strong>${sched}</strong> &bull; State testing vendor: <strong>${stObj.vendor}</strong>. (In production, this native 50-state router passes zip + state + schedule straight to Esyoh, national CPL buyers, or local partner schools.)</p>
+        <p class="text-xs text-slate-600">Schedule preference: <strong>${sched}</strong> &bull; State testing vendor: <strong>${stObj.vendor}</strong>. (In production, zip searches can hand off directly into your attributed Esyoh category-312 / EducationDynamics campus-and-online school matcher across all 50 states so students never double-enter info, or route native inquiries to direct partner schools.)</p>
         <div class="space-y-2 pt-1">
           ${matches.map(m => `<div class="p-3 rounded-xl bg-white border border-sage-200 flex items-center justify-between gap-2"><div><strong class="text-harbor-950 text-xs sm:text-sm">${m.name}</strong><div class="text-xs text-slate-500">${m.city}${m.state !== 'ALL' ? ', ' + m.state : ''} &bull; ${m.costLabel}</div></div><span class="text-xs font-bold text-sage-800">${m.schedule}</span></div>`).join('')}
         </div>
