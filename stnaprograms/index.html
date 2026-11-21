@@ -34,6 +34,9 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: {
+            desk: '1160px'
+          },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
             display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
@@ -225,33 +228,33 @@
     }
   </style>
 </head>
-<body class="bg-linen-50 text-slate-800 antialiased selection:bg-harbor-800 selection:text-white pb-20 md:pb-0">
+<body class="bg-linen-50 text-slate-800 antialiased selection:bg-harbor-800 selection:text-white pb-24 md:pb-0 overflow-x-hidden">
 
   <!-- ShloobSoft Concept Preview Bar (Collapsible for Clean Client Preview) -->
-  <div id="preview-bar" class="bg-harbor-950 text-slate-200 text-xs py-2 px-4 sm:px-6 border-b border-white/10">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <div class="flex items-center gap-2.5">
+  <div id="preview-bar" class="bg-harbor-950 text-slate-200 text-xs py-2 px-3 sm:px-6 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2 min-w-0">
         <a href="https://shloobsoft.net" target="_blank" rel="noopener" class="flex items-center hover:opacity-90 transition shrink-0">
           <img src="assets/shloobsoft-lockup-dark.png" alt="ShloobSoft" class="h-5 w-auto object-contain" />
         </a>
-        <span class="px-2 py-0.5 rounded bg-sunrise-500 text-white font-extrabold tracking-wide text-[10px] uppercase whitespace-nowrap">Live Concept Study</span>
+        <span class="hidden sm:inline-block px-2 py-0.5 rounded bg-sunrise-500 text-white font-extrabold tracking-wide text-[10px] uppercase whitespace-nowrap">Live Concept Study</span>
         <span class="hidden xl:inline text-slate-300 truncate"><strong>STNAprograms.com</strong> 50-State Expansion &bull; Preserves Ohio Rank + Unlocks Nationwide CNA/STNA Leads</span>
       </div>
-      <div class="flex items-center gap-2">
-        <button type="button" onclick="switchView('seo-audit')" class="px-2.5 py-1 rounded-lg bg-sage-600 hover:bg-sage-700 text-white font-bold text-[11px] transition cursor-pointer whitespace-nowrap">
-          SEO &amp; LLM Inspector
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <button type="button" onclick="switchView('seo-audit')" class="px-2 sm:px-2.5 py-1 rounded-lg bg-sage-600 hover:bg-sage-700 text-white font-bold text-[11px] transition cursor-pointer whitespace-nowrap">
+          SEO &amp; AI<span class="hidden sm:inline"> Inspector</span>
         </button>
-        <a href="llms.txt" target="_blank" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-[11px] transition whitespace-nowrap">
-          View llms.txt &nearr;
+        <a href="llms.txt" target="_blank" class="px-2 sm:px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-[11px] transition whitespace-nowrap">
+          <span class="hidden sm:inline">View </span>llms.txt &nearr;
         </a>
         <button type="button" onclick="document.getElementById('preview-bar').classList.add('hidden')" class="px-1.5 py-1 rounded text-slate-400 hover:text-white text-[11px] cursor-pointer whitespace-nowrap" title="Hide preview bar">
-          Hide &times;
+          <span class="hidden sm:inline">Hide </span>&times;
         </button>
       </div>
     </div>
   </div>
 
-  <!-- Sticky Responsive Site Header -->
+  <!-- Sticky Responsive Site Header (Tailored for Mobile, Tablet & 1160px+ Desktop) -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-linen-300/70 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
       <!-- Brand Identity -->
@@ -263,15 +266,15 @@
           </svg>
         </div>
         <div>
-          <span class="font-display font-extrabold text-lg tracking-tight text-harbor-900 block leading-none group-hover:text-harbor-700 transition whitespace-nowrap">
+          <span class="font-display font-extrabold text-base sm:text-lg tracking-tight text-harbor-900 block leading-none group-hover:text-harbor-700 transition whitespace-nowrap">
             STNA<span class="text-sage-700">programs</span><span class="text-slate-400 font-semibold text-xs">.com</span>
           </span>
           <span class="text-[11px] font-semibold text-slate-500 block mt-1 whitespace-nowrap">50-State STNA &amp; CNA Guide</span>
         </div>
       </button>
 
-      <!-- Desktop Single-Row Navigation -->
-      <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-0.5 bg-linen-100 p-1 rounded-xl border border-linen-300/60">
+      <!-- Desktop Single-Row Navigation (1160px+ so 768px-1159px Tablets Never Overflow) -->
+      <nav aria-label="Primary Navigation" class="hidden desk:flex items-center gap-0.5 bg-linen-100 p-1 rounded-xl border border-linen-300/60">
         <button type="button" data-nav="home" onclick="switchView('home')" class="nav-btn active px-2.5 xl:px-3 py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-harbor-900 transition cursor-pointer whitespace-nowrap min-h-[38px]">Home</button>
         <button type="button" data-nav="states" onclick="switchView('states')" class="nav-btn px-2.5 xl:px-3 py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-harbor-900 transition cursor-pointer whitespace-nowrap min-h-[38px]">50-State Guide</button>
         <button type="button" data-nav="directory" onclick="switchView('directory')" class="nav-btn px-2.5 xl:px-3 py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-harbor-900 transition cursor-pointer whitespace-nowrap min-h-[38px]">School Directory</button>
@@ -280,30 +283,31 @@
         <button type="button" data-nav="exam-prep" onclick="switchView('exam-prep')" class="nav-btn px-2.5 xl:px-3 py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-harbor-900 transition cursor-pointer whitespace-nowrap min-h-[38px]">Quiz &amp; FAQ</button>
       </nav>
 
-      <!-- Right Action CTA + Mobile Hamburger -->
+      <!-- Right Action CTA + Mobile/Tablet Menu Button -->
       <div class="flex items-center gap-2 shrink-0">
         <button type="button" onclick="switchView('match')" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-sunrise-600 hover:bg-sunrise-700 text-white font-display font-bold text-xs shadow-sm transition cursor-pointer whitespace-nowrap min-h-[42px]">
           <span>Explore Local Classes</span>
           <span aria-hidden="true">&rarr;</span>
         </button>
-        <button type="button" id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open site navigation menu" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200 bg-linen-50 text-harbor-900 hover:bg-linen-100 transition cursor-pointer">
-          <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-          <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        <button type="button" id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open site navigation menu" class="desk:hidden inline-flex items-center justify-center gap-1.5 px-3 min-w-[44px] h-11 rounded-xl border border-slate-200 bg-linen-50 text-harbor-900 hover:bg-linen-100 transition cursor-pointer">
+          <svg id="menu-icon-open" class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="menu-icon-close" class="w-5 h-5 shrink-0 hidden" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          <span class="hidden sm:inline text-xs font-bold">Menu</span>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-linen-300/70 bg-white px-4 pt-3 pb-5 shadow-lg">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+    <!-- Mobile & Tablet Navigation Drawer -->
+    <div id="mobile-menu" class="hidden desk:hidden border-t border-linen-300/70 bg-white px-4 sm:px-6 pt-3 pb-5 shadow-lg">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         <button type="button" data-nav="home" onclick="switchView('home'); toggleMobileMenu(false)" class="nav-btn active text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">Home Overview</button>
-        <button type="button" data-nav="states" onclick="switchView('states'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">All 50 States + D.C. Requirements</button>
-        <button type="button" data-nav="directory" onclick="switchView('directory'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">Nationwide &amp; Ohio School Directory</button>
-        <button type="button" data-nav="certification" onclick="switchView('certification'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">6-Step Certification &amp; State Exams</button>
-        <button type="button" data-nav="online-free" onclick="switchView('online-free'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">Hybrid Online &amp; $0 Free Tuition</button>
-        <button type="button" data-nav="exam-prep" onclick="switchView('exam-prep'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">Free Practice Quiz &amp; FAQ</button>
+        <button type="button" data-nav="states" onclick="switchView('states'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">All 50 States + D.C. Guide</button>
+        <button type="button" data-nav="directory" onclick="switchView('directory'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">School Directory</button>
+        <button type="button" data-nav="certification" onclick="switchView('certification'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">6-Step Certification</button>
+        <button type="button" data-nav="online-free" onclick="switchView('online-free'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">Online &amp; $0 Free Tuition</button>
+        <button type="button" data-nav="exam-prep" onclick="switchView('exam-prep'); toggleMobileMenu(false)" class="nav-btn text-left px-4 py-3 rounded-xl text-sm font-bold text-slate-800 bg-linen-50 min-h-[44px]">Practice Quiz &amp; FAQ</button>
       </div>
-      <button type="button" onclick="switchView('match'); toggleMobileMenu(false)" class="mt-3 w-full py-3.5 px-4 rounded-xl bg-sunrise-600 hover:bg-sunrise-700 text-white font-display font-bold text-sm shadow transition min-h-[48px]">
+      <button type="button" onclick="switchView('match'); toggleMobileMenu(false)" class="sm:hidden mt-3 w-full py-3.5 px-4 rounded-xl bg-sunrise-600 hover:bg-sunrise-700 text-white font-display font-bold text-sm shadow transition min-h-[48px]">
         Explore Classes &amp; Start Dates Near Me &rarr;
       </button>
     </div>
@@ -333,23 +337,23 @@
 
           <!-- Nationwide U.S. Zip Code / State Search Card -->
           <form onsubmit="handleHeroSearch(event)" class="bg-white text-slate-800 rounded-2xl p-4 sm:p-5 shadow-xl border border-linen-300/60 max-w-2xl">
-            <div class="grid sm:grid-cols-12 gap-3 items-end">
-              <div class="sm:col-span-5">
-                <label for="hero-zip" class="block text-xs font-bold text-harbor-900 mb-1.5">Enter Any U.S. Zip Code or State</label>
-                <input id="hero-zip" type="text" placeholder="e.g. 92101, 43215, Texas, FL..." class="w-full px-3.5 py-3 rounded-xl border border-slate-300 bg-linen-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[46px]" />
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
+              <div class="md:col-span-5">
+                <label for="hero-zip" class="block text-xs font-bold text-harbor-900 mb-1.5">U.S. Zip Code or State</label>
+                <input id="hero-zip" type="text" placeholder="e.g. 92101, 43215, Texas..." class="w-full px-3.5 py-3 rounded-xl border border-slate-300 bg-linen-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-harbor-700 h-[46px]" />
               </div>
-              <div class="sm:col-span-4">
-                <label for="hero-schedule" class="block text-xs font-bold text-harbor-900 mb-1.5">What Fits Your Life Best?</label>
-                <select id="hero-schedule" class="w-full px-3 py-3 rounded-xl border border-slate-300 bg-linen-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[46px]">
-                  <option value="all">All State-Approved Classes</option>
-                  <option value="free">$0 Tuition / Grant / Employer</option>
-                  <option value="fast">Fast-Track (2 to 5 Weeks)</option>
+              <div class="md:col-span-4">
+                <label for="hero-schedule" class="block text-xs font-bold text-harbor-900 mb-1.5">Preferred Schedule</label>
+                <select id="hero-schedule" class="w-full px-3 py-3 rounded-xl border border-slate-300 bg-linen-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-harbor-700 h-[46px]">
+                  <option value="all">All Approved Classes</option>
+                  <option value="free">$0 Tuition / Grants</option>
+                  <option value="fast">Fast-Track (2 to 5 Wks)</option>
                   <option value="evening">Evening &amp; Weekend</option>
-                  <option value="college">Community College Credit</option>
+                  <option value="college">Community College</option>
                 </select>
               </div>
-              <div class="sm:col-span-3">
-                <button type="submit" class="w-full py-3 px-4 rounded-xl bg-sunrise-600 hover:bg-sunrise-700 text-white font-display font-bold text-sm shadow transition cursor-pointer min-h-[46px]">
+              <div class="md:col-span-3">
+                <button type="submit" class="w-full py-3 px-4 rounded-xl bg-sunrise-600 hover:bg-sunrise-700 text-white font-display font-bold text-sm shadow transition cursor-pointer whitespace-nowrap h-[46px]">
                   See Classes
                 </button>
               </div>
@@ -371,13 +375,13 @@
         <!-- Warm Classroom Photography Card -->
         <div class="lg:col-span-5">
           <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/15 bg-harbor-950">
-            <img src="assets/hero_stna_classroom.jpg" alt="Smiling nursing assistant students in teal scrubs practicing blood pressure and pulse skills with an encouraging RN instructor" class="w-full h-[300px] sm:h-[380px] object-cover object-center" />
-            <div class="bg-white text-slate-800 p-4 flex items-center justify-between gap-4">
+            <img src="assets/hero_stna_classroom.jpg" alt="Smiling nursing assistant students in teal scrubs practicing blood pressure and pulse skills with an encouraging RN instructor" class="w-full h-60 sm:h-80 lg:h-[370px] object-cover object-center" />
+            <div class="bg-white text-slate-800 p-4 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3">
               <div>
                 <div class="text-xs font-bold uppercase tracking-wider text-sage-700">You Never Walk In Cold</div>
                 <p class="text-xs sm:text-sm font-semibold text-slate-800 mt-0.5">Friendly RN instructors coach you through every skill in lab before your first clinical day.</p>
               </div>
-              <button type="button" onclick="switchView('certification')" class="shrink-0 px-3 py-2 rounded-lg bg-harbor-50 hover:bg-harbor-100 text-harbor-800 font-bold text-xs transition cursor-pointer whitespace-nowrap">
+              <button type="button" onclick="switchView('certification')" class="shrink-0 px-3 py-2 rounded-lg bg-harbor-50 hover:bg-harbor-100 text-harbor-800 font-bold text-xs transition cursor-pointer whitespace-nowrap min-h-[38px]">
                 How It Works &rarr;
               </button>
             </div>
@@ -388,24 +392,24 @@
 
     <!-- Verified 2026 Nationwide U.S. Snapshot Strip -->
     <section aria-label="U.S. Nurse Aide Key Facts" class="bg-white border-b border-linen-300/70">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-        <div class="p-4 rounded-2xl bg-linen-50 border border-linen-300/60">
-          <div class="font-display font-extrabold text-2xl sm:text-3xl text-harbor-900">75 to 180h</div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+        <div class="p-3.5 sm:p-4 rounded-2xl bg-linen-50 border border-linen-300/60">
+          <div class="font-display font-extrabold text-xl sm:text-2xl xl:text-3xl text-harbor-900">75 to 180h</div>
           <div class="text-xs font-bold text-sage-800 mt-0.5">State Training Minimums</div>
           <p class="text-xs text-slate-600 mt-1">75-hr federal baseline in 20 states (incl. OH); 80 to 180 hrs in CA, TX, FL &amp; NY.</p>
         </div>
-        <div class="p-4 rounded-2xl bg-linen-50 border border-linen-300/60">
-          <div class="font-display font-extrabold text-2xl sm:text-3xl text-harbor-900">$20.53/hr</div>
-          <div class="text-xs font-bold text-sage-800 mt-0.5">U.S. Avg Pay ($20.32 Median)</div>
+        <div class="p-3.5 sm:p-4 rounded-2xl bg-linen-50 border border-linen-300/60">
+          <div class="font-display font-extrabold text-xl sm:text-2xl xl:text-3xl text-harbor-900">$20.53/hr</div>
+          <div class="text-xs font-bold text-sage-800 mt-0.5">U.S. Avg Pay ($20.32 Med)</div>
           <p class="text-xs text-slate-600 mt-1">Reaching $24.13 to $25.11/hr average in CA, OR &amp; WA per U.S. BLS data.</p>
         </div>
-        <div class="p-4 rounded-2xl bg-linen-50 border border-linen-300/60">
-          <div class="font-display font-extrabold text-2xl sm:text-3xl text-harbor-900">50 States</div>
-          <div class="text-xs font-bold text-sage-800 mt-0.5">Portable Career + Reciprocity</div>
+        <div class="p-3.5 sm:p-4 rounded-2xl bg-linen-50 border border-linen-300/60">
+          <div class="font-display font-extrabold text-xl sm:text-2xl xl:text-3xl text-harbor-900">50 States</div>
+          <div class="text-xs font-bold text-sage-800 mt-0.5">Portable Reciprocity</div>
           <p class="text-xs text-slate-600 mt-1">Transfer active CNA, STNA, LNA, or SRNA registry status when you move.</p>
         </div>
-        <div class="p-4 rounded-2xl bg-sunrise-50 border border-sunrise-100">
-          <div class="font-display font-extrabold text-2xl sm:text-3xl text-sunrise-700">$0 Options</div>
+        <div class="p-3.5 sm:p-4 rounded-2xl bg-sunrise-50 border border-sunrise-100">
+          <div class="font-display font-extrabold text-xl sm:text-2xl xl:text-3xl text-sunrise-700">$0 Options</div>
           <div class="text-xs font-bold text-sunrise-700 mt-0.5">Federal OBRA &amp; WIOA Aid</div>
           <p class="text-xs text-slate-700 mt-1">Federal rules protect $0 nursing-home training &amp; 12-mo reimbursement in every state.</p>
         </div>
@@ -498,7 +502,7 @@
             <button type="button" onclick="openStateDetail('NY')" class="px-3 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-left text-xs font-bold transition cursor-pointer min-h-[44px]">New York (100h)</button>
             <button type="button" onclick="openStateDetail('PA')" class="px-3 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-left text-xs font-bold transition cursor-pointer min-h-[44px]">Pennsylvania (80h)</button>
             <button type="button" onclick="openStateDetail('IL')" class="px-3 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-left text-xs font-bold transition cursor-pointer min-h-[44px]">Illinois (120h)</button>
-            <button type="button" onclick="switchView('states')" class="px-3 py-2.5 rounded-xl bg-sage-600 hover:bg-sage-500 text-left text-xs font-bold transition cursor-pointer min-h-[44px]">All 50 States + D.C. &rarr;</button>
+            <button type="button" onclick="switchView('states')" class="px-3 py-2.5 rounded-xl bg-sage-600 hover:bg-sage-500 text-left text-xs font-bold transition cursor-pointer whitespace-nowrap min-h-[44px]">All 50 States &rarr;</button>
           </div>
         </div>
       </div>
@@ -524,12 +528,12 @@
       <div id="state-spotlight" class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-harbor-700 shadow-md"></div>
 
       <!-- Search & Region Filter for All 51 Jurisdictions -->
-      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-linen-300 shadow-sm grid sm:grid-cols-12 gap-3.5 items-end">
-        <div class="sm:col-span-5">
+      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-linen-300 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-3.5 items-end">
+        <div class="md:col-span-5">
           <label for="state-search" class="block text-xs font-bold text-harbor-900 mb-1">Find State or Enter 5-Digit U.S. Zip Code</label>
           <input id="state-search" type="text" oninput="renderStatesGrid()" placeholder="e.g. Ohio, California, 77002, LNA, SRNA..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 bg-linen-50 text-sm focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[44px]" />
         </div>
-        <div class="sm:col-span-4">
+        <div class="md:col-span-4">
           <label for="state-region" class="block text-xs font-bold text-harbor-900 mb-1">U.S. Region</label>
           <select id="state-region" onchange="renderStatesGrid()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 bg-linen-50 text-sm focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[44px]">
             <option value="all">All 50 States + D.C. (51)</option>
@@ -539,7 +543,7 @@
             <option value="West">West &amp; Pacific</option>
           </select>
         </div>
-        <div class="sm:col-span-3">
+        <div class="md:col-span-3">
           <label for="state-hours-filter" class="block text-xs font-bold text-harbor-900 mb-1">Required Hours Tier</label>
           <select id="state-hours-filter" onchange="renderStatesGrid()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 bg-linen-50 text-sm focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[44px]">
             <option value="all">All Hour Requirements</option>
@@ -550,7 +554,7 @@
         </div>
       </div>
 
-      <div id="states-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3.5"></div>
+      <div id="states-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5"></div>
     </section>
   </main>
 
@@ -570,16 +574,16 @@
 
     <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-6">
       <div class="bg-white rounded-2xl p-4 sm:p-6 border border-linen-300 shadow-sm space-y-4">
-        <div class="grid sm:grid-cols-12 gap-3.5 items-end">
-          <div class="sm:col-span-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3.5 items-end">
+          <div class="sm:col-span-1 lg:col-span-5">
             <label for="dir-search" class="block text-xs font-bold text-harbor-900 mb-1">U.S. Zip Code, City, State, or School Name</label>
             <input id="dir-search" type="text" oninput="renderDirectory()" placeholder="Try 92101, 77002, 43215, Miami, Tri-C, Wake Tech..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 bg-linen-50 text-sm focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[44px]" />
           </div>
-          <div class="sm:col-span-3">
+          <div class="sm:col-span-1 lg:col-span-3">
             <label for="dir-state" class="block text-xs font-bold text-harbor-900 mb-1">State</label>
             <select id="dir-state" onchange="renderDirectory()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 bg-linen-50 text-sm focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[44px]"></select>
           </div>
-          <div class="sm:col-span-2">
+          <div class="sm:col-span-1 lg:col-span-2">
             <label for="dir-type" class="block text-xs font-bold text-harbor-900 mb-1">Format / Funding</label>
             <select id="dir-type" onchange="renderDirectory()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 bg-linen-50 text-sm focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[44px]">
               <option value="all">All Formats</option>
@@ -590,7 +594,7 @@
               <option value="evening">Evening / Weekend</option>
             </select>
           </div>
-          <div class="sm:col-span-2">
+          <div class="sm:col-span-1 lg:col-span-2">
             <label for="dir-sort" class="block text-xs font-bold text-harbor-900 mb-1">Sort Results</label>
             <select id="dir-sort" onchange="renderDirectory()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 bg-linen-50 text-sm focus:outline-none focus:ring-2 focus:ring-harbor-700 min-h-[44px]">
               <option value="featured">Recommended</option>
@@ -1340,9 +1344,9 @@
             <p class="text-sm sm:text-base text-slate-600 leading-relaxed">${s.note}</p>
           </div>
           <div class="lg:col-span-4 bg-linen-50 rounded-2xl p-5 border border-linen-300/80 space-y-2.5 text-xs sm:text-sm">
-            <div class="flex justify-between"><strong>Minimum Hours:</strong><span class="text-harbor-900 font-bold">${s.hours} Total (${s.clin} Clinical)</span></div>
-            <div class="flex justify-between"><strong>Testing Partner:</strong><span class="text-slate-700 font-semibold">${s.vendor}</span></div>
-            <div class="flex justify-between"><strong>Typical Pay:</strong><span class="text-sage-800 font-bold">${s.pay}</span></div>
+            <div class="flex items-start justify-between gap-3"><strong class="shrink-0">Minimum Hours:</strong><span class="text-right text-harbor-900 font-bold">${s.hours} Total (${s.clin} Clinical)</span></div>
+            <div class="flex items-start justify-between gap-3"><strong class="shrink-0">Testing Partner:</strong><span class="text-right text-slate-700 font-semibold">${s.vendor}</span></div>
+            <div class="flex items-start justify-between gap-3"><strong class="shrink-0">Typical Pay:</strong><span class="text-right text-sage-800 font-bold">${s.pay}</span></div>
             <div class="pt-2 flex flex-col gap-2">
               <button type="button" onclick="filterDirectoryAndGo('${s.code}', 'all')" class="w-full py-2.5 px-4 rounded-xl bg-harbor-800 hover:bg-harbor-900 text-white font-bold text-xs transition cursor-pointer min-h-[42px]">
                 ${stateSchools.length ? `Browse ${stateSchools.length} Featured ${s.name} Schools` : `See ${s.name} &amp; $0 Sponsored Tracks`} &rarr;
