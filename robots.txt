@@ -3,6 +3,7 @@ Allow: /
 Disallow: /rhodesmoore/
 Disallow: /debrief-9f4c2a/
 Disallow: /stnaprograms/
+Disallow: /jomarlabs/
 
 Sitemap: https://shloobsoft.net/sitemap.xml
 # AI Discovery Fact Sheets:

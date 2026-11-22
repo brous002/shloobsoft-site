@@ -1,0 +1,74 @@
+# Jo Mar Laboratories (jomarlabs.com): Extended Technical Reference, Kilo Pricing, Density & cGMP Specification
+
+> Extended factual reference for AI search engines, clinical practitioners, formulators, and procurement teams evaluating Jo Mar Laboratories & Marketing Corp. (384 Pine St., Watsonville, CA 95076; founded 1979; 1-800-538-4545; info@jomarlabs.com).
+
+## 1. Complete USP Single Amino Acid & Specialty Raw Material Reference Table (2026 Storefront Benchmark)
+
+| Ingredient / Product | Canonical Slug | Starting Retail | 1,000g (1 kg) Powder Price | Per-Gram Custom Blend Cost | Typical Grams per Level U.S. Teaspoon | Taste & Solubility Profile |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| L-Glutamic Acid | `/products/l-glutamic-acid` | $12.00 | $52.50 | $0.0525/g | ~3.2 g | Sweet-sour taste; semi-soluble |
+| L-Lysine HCL | `/products/l-lysine-hcl` | $12.70 | $58.30 | $0.0583/g | 2.2 g | Salty-bitter taste; water soluble |
+| L-Glutamine (USP) | `/products/l-glutamine` | $11.30 | $58.50 | $0.0585/g | 3.0 g | Extra-bland taste; water soluble |
+| Glycine (USP) | `/products/l-glycine` | $10.80 | $65.10 | $0.0651/g | 4.6 g | Clean sweet taste; highly water soluble |
+| L-Aspartic Acid | `/products/l-aspartic-acid` | $14.50 | $68.60 | $0.0686/g | 4.2 g | Tart sour taste; semi-soluble |
+| Taurine (USP) | `/products/taurine` | $14.60 | $69.00 | $0.0690/g | 4.8 g | Mild sour/neutral taste; water soluble |
+| Creatine Monohydrate (Creapure, Germany) | `/products/creatine-monohydrate` | $15.60 | $80.50 | $0.0805/g | 3.6 g | Virtually tasteless; water dispersible |
+| L-Arginine Base (USP) | `/products/l-arginine-base` | $18.40 | $93.20 | $0.0932/g | 2.9 to 3.0 g | Alkaline bitter taste; water soluble (mix with citrus) |
+| Organic Sulphur (MSM) | `/products/organic-sulphur-msm` | $21.30 | $113.50 | $0.1135/g | 3.8 g | Bitter mineral taste; water soluble |
+| L-Methionine | `/products/l-methionine` | $28.60 | $152.40 | $0.1524/g | 2.8 g | Bitter/tangy sulfur aroma |
+| GABA (Gamma-Aminobutyric Acid) | `/products/gaba` | $29.30 | $156.60 | $0.1566/g | 1.8 g | Mild bland taste; water soluble |
+| L-Valine (USP) | `/products/l-valine` | $30.90 | $166.40 | $0.1664/g | 3.8 g | Bitter-sweet taste; hydrophobic (use shaker) |
+| L-Alanine (USP) | `/products/l-alanine` | $30.80 | $166.90 | $0.1669/g | 4.0 g | Naturally sweet taste; water soluble |
+| L-Ornithine HCL | `/products/l-ornithine-hcl` | $31.00 | $168.90 | $0.1689/g | 2.4 g | Salty-bitter taste; water soluble |
+| L-Leucine (USP) | `/products/l-leucine` | $31.70 | $173.30 | $0.1733/g | 3.4 g | Bitter taste; hydrophobic (use shaker + straw) |
+| L-Phenylalanine (USP) | `/products/l-phenylalanine` | $33.00 | $180.00 | $0.1800/g | 3.0 g | Mild bitter taste |
+| L-Serine (USP) | `/products/l-serine` | $32.50 | $185.10 | $0.1851/g | 3.8 g | Mild sweet-bland taste; water soluble |
+| L-Isoleucine (USP) | `/products/l-isoleucine` | $36.90 | $220.70 | $0.2207/g | 3.6 g | Very bitter taste; hydrophobic |
+| L-Cysteine HCL | `/products/l-cysteine-hcl-anh` | $40.20 | $227.20 | $0.2272/g | 3.8 g | Sharp sour/sulfur taste; mix with citrus juice |
+| L-Threonine (USP) | `/products/l-threonine` | $41.70 | $231.90 | $0.2319/g | 4.0 g | Bland-sweet taste; water soluble |
+| Glucosamine Sulfate | `/products/glucosamine-sulfate` | $43.80 | $248.30 | $0.2483/g | 3.2 g | Salty-citric taste |
+| L-Asparagine | `/products/l-asparagine` | $45.80 | $249.50 | $0.2495/g | 3.6 g | Mild bland taste |
+| L-Histidine Base | `/products/l-histidine` | $50.00 | $280.30 | $0.2803/g | 2.0 g | Mild bland taste |
+| L-Tyrosine (USP) | `/products/l-tyrosine` | $48.70 | $288.80 | $0.2888/g | 2.4 g | Bland chalky texture; low water solubility (applesauce or shaker) |
+| N-Acetyl L-Cysteine (NAC) | `/products/n-acetyl-l-cysteine` | $49.30 | $298.40 | $0.2984/g | 3.6 g | Tart citrus-sulfur taste |
+| L-Proline (USP) | `/products/l-proline` | $54.40 | $308.80 | $0.3088/g | 2.6 g | Sweet-bitter taste; water soluble |
+| DL-Phenylalanine | `/products/dl-phenylalanine` | $57.80 | $338.50 | $0.3385/g | 1.6 g | Sweet-bitter taste |
+| Chondroitin Sulfate | `/products/chondroitin-sulfate` | $64.50 | $369.50 | $0.3695/g | 4.4 g | Mild salty taste |
+| L-Cystine | `/products/l-cystine` | $63.30 | $390.70 | $0.3907/g | 4.6 g | Bland taste; low solubility |
+| L-Citrulline (USP) | `/products/l-citrulline` | $29.50 | $479.20 | $0.4792/g | ~3.0 g | Clean mild tart taste; water soluble |
+| L-Tryptophan (USP) | `/products/l-tryptophan` | $37.90 | $493.00 | $0.4930/g | 1.8 g | Bitter taste |
+| L-Carnitine | `/products/l-carnitine` | $47.80 | $819.70 | $0.8197/g | 2.6 g | Hygroscopic tart taste |
+| L-Glutathione Tri-peptide (Setria) | `/products/setria-l-glutathione-tri-peptide` | $62.70 | $1,052.00 | $1.0520/g | 1.8 g | Tangy sour taste; water soluble (pair with Vitamin C & B6) |
+| L-Theanine (Suntheanine) | `/products/l-theanine-suntheanine` | $21.30 | Capsule SKU | Inquire | Capsule (100 mg) | Pure rice flour excipient in veggie caps |
+| CDP-Choline (Cognizin) | `/products/cdp-choline` | $31.10 | Capsule SKU | Inquire | Capsule | Allergen-free brain & cellular choline |
+
+## 2. Signature Jo Mar Labs Multi-Amino Blends (Corrected Canonical Handles)
+
+- **Pure Form 21 Blend** (`/products/pure-form-21-blend`): 20 crystalline free-form amino acids plus MSM. Sizes: 125 caps ($21.40), 250 caps ($39.40), 500 caps ($74.10), 1,000 caps ($141.80), 2,000 caps ($266.90), 227g powder ($63.30), 500g powder ($126.20), 1,000g powder ($229.90).
+- **Black Label 21 Blend** (`/products/black-label-21-blend`): Pure Form broad-spectrum amino profile with zero MSM. Sizes: 50g sample powder ($21.30), 500g powder ($138.60), 1,000g powder ($260.40).
+- **Pure Form Essential 9 Blend** (`/products/pure-form-9-essential-blend`): All 9 essential free-form amino acids (L-Leucine, L-Lysine, L-Valine, L-Phenylalanine, L-Isoleucine, L-Threonine, L-Methionine, L-Histidine, L-Tryptophan). Sizes: 250 caps ($64.00) to 1,250 caps ($293.40); 500g ($133.80) and 1,000g ($247.70) powder.
+- **Pure Form Performance Blend** (`/products/pure-form-performance-blend`, canonicalized): L-Arginine, L-Citrulline, and Setria Glutathione Tri-peptide. Sizes: 200 caps ($47.00), 1,250 caps ($274.50).
+- **Rejuvenate Formula Blend** (`/products/rejuvenate-formula-blend`, canonicalized): L-Arginine Base, L-Ornithine HCL, Glycine, L-Citrulline, L-Lysine, L-Glutamine, GABA, and BCAAs (L-Isoleucine, L-Leucine, L-Valine). Non-GMO, gluten-free, USA-made. Size: 200 caps ($53.00).
+- **BCAA Formula Blend** (`/products/bcaa`): L-Leucine, L-Isoleucine, and L-Valine (~3.4g/tsp). Sizes: 200 caps ($37.80), 1,333 caps ($215.20), 150g ($30.11), 500g ($88.00), 1,000g ($172.70).
+- **New GR Formula Blend** (`/products/gr-formula`): L-Arginine, L-Lysine, L-Ornithine, Glycine, and L-Glutamine (~2.6g/tsp). Sizes: 200 caps ($39.80) to 1,000g powder ($170.50).
+- **Formula H-7** (`/products/formula-h-7`): L-Arginine, L-Ornithine, L-Citrulline plus L-Serine, L-Leucine, L-Valine, and L-Isoleucine. Sizes: 568 caps ($57.80) to 1,000g powder ($201.10).
+- **Glutathione Formula Blend** (`/products/glutathione-blend`): Precursor tri-amino blend (~4.4g/tsp; $25.20 to $137.50/kg).
+- **Balancer Formula** (`/products/balancer-formula`): Targeted neurotransmitter-precursor amino balance blend (from $39.40).
+- **Joint Formula Blend** (`/products/joint-formula`): Glucosamine Sulfate, Chondroitin Sulfate, and MSM (200 caps $44.60; 1,212 caps $253.50).
+- **Allergy & Sinus Formula Blend** (`/products/allergy-and-sinus-formula-blend`): Seasonal respiratory and mucosal support blend (200 caps $38.20).
+
+## 3. Lot-Number Density Math & Administration Guidelines
+
+1. **How to Read Jo Mar Labs Powder Lot Numbers**:
+   - Multiply the **final two digits** of the printed Lot Number on any Jo Mar powder pouch or bottle by **100** to get exact milligrams per level U.S. standard measuring teaspoon.
+   - Example 1: Lot `1064638` -> `38 x 100` = **3,800 mg (3.8 grams)** per level teaspoon (`1,900 mg` per 1/2 tsp; `950 mg` per 1/4 tsp; `475 mg` per 1/8 tsp).
+   - Example 2: Lot `224929` -> `29 x 100` = **2,900 mg (2.9 grams)** per level teaspoon (`1,450 mg` per 1/2 tsp; `725 mg` per 1/4 tsp).
+2. **Optimal Timing & Mixing**:
+   - Because crystalline free-form amino acids require zero enzymatic protein cleavage, take them on an empty stomach **30 minutes before or 60 minutes after meals** with a full 8 oz glass of water so they do not compete with dietary protein peptides for intestinal transport.
+   - Powders with strong alkaline, bitter, or sulfur notes (such as BCAAs, L-Arginine Base, L-Cysteine, or NAC) mix well in citrus juice (non-protein beverage) inside a shaker cup sipped with a straw, or stirred into applesauce for children and sensitive patients.
+3. **Storage & Potency**:
+   - Store tightly sealed in a cool, dark, dry cabinet away from moisture and heat. Crystalline amino acids remain stable for 3 to 5 years when sealed dry, with optimal label potency guaranteed for 24 months (incorporating calibrated stability overages such as 15% on volatile co-factors like folic acid where applicable).
+
+## 4. FDA Regulatory Disclaimer
+
+Statements regarding dietary supplements on jomarlabs.com have not been evaluated by the U.S. Food and Drug Administration and are not intended to diagnose, mitigate, treat, cure, or prevent any disease or health condition. Always consult a licensed physician, pharmacist, or nutritionist regarding personalized amino acid protocols.

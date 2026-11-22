@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="jmbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#072B52"/>
+      <stop offset="55%" stop-color="#0E4D8A"/>
+      <stop offset="100%" stop-color="#1677AC"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="88" fill="url(#jmbg)"/>
+  <rect x="34" y="34" width="444" height="444" rx="72" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"/>
+  <!-- Top arch text bar -->
+  <text x="256" y="96" text-anchor="middle" fill="#93C5FD" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="5">EST. 1979</text>
+  <!-- Precision Analytical Balance Scale -->
+  <!-- Center pillar & base -->
+  <rect x="242" y="138" width="28" height="236" rx="6" fill="#FFFFFF"/>
+  <rect x="176" y="366" width="160" height="24" rx="12" fill="#FFFFFF"/>
+  <!-- Top beam -->
+  <rect x="86" y="134" width="340" height="16" rx="8" fill="#FFFFFF"/>
+  <circle cx="256" cy="142" r="16" fill="#38BDF8" stroke="#FFFFFF" stroke-width="5"/>
+  <!-- Left pan strings & bowl -->
+  <line x1="128" y1="148" x2="84" y2="276" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <line x1="128" y1="148" x2="172" y2="276" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <path d="M74 276 H182 C182 314 158 332 128 332 C98 332 74 314 74 276 Z" fill="#FFFFFF"/>
+  <!-- Right pan strings & bowl -->
+  <line x1="384" y1="148" x2="340" y2="276" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <line x1="384" y1="148" x2="428" y2="276" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <path d="M330 276 H438 C438 314 414 332 384 332 C354 332 330 314 330 276 Z" fill="#FFFFFF"/>
+  <!-- Bottom Balance Your Life motto -->
+  <text x="256" y="438" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="3">BALANCE YOUR LIFE</text>
+</svg>

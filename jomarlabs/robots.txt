@@ -1,0 +1,8 @@
+# Unlisted ShloobSoft Concept Study Preview (noindex until jomarlabs.com production cutover)
+User-agent: *
+Disallow: /
+
+# Production Cutover Ready Assets:
+# https://www.jomarlabs.com/sitemap.xml
+# https://www.jomarlabs.com/llms.txt
+# https://www.jomarlabs.com/llms-full.txt
