@@ -689,7 +689,8 @@
             <select id="cat-format" onchange="renderCatalog()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm font-semibold text-slate-700 bg-white min-h-[44px]">
               <option value="all">All Formats &amp; Goals</option>
               <option value="kilo">Has 1,000g Bulk Kilo Powder</option>
-              <option value="caps">Vegetarian Capsules</option>
+              <option value="caps">Vegetarian Capsules Available</option>
+              <option value="bland">Mild / Sweet / Tasteless Powders</option>
               <option value="powder">Crystalline Powders</option>
               <option value="goal:gut">Goal: Gut &amp; Mucosal Recovery</option>
               <option value="goal:calm">Goal: Sleep, Calm &amp; Mood</option>
@@ -708,6 +709,16 @@
               <option value="az">Name: A to Z</option>
             </select>
           </div>
+        </div>
+
+        <!-- One-Click Department & Format Filter Chips (Zero Dropdown Lag) -->
+        <div class="flex flex-wrap items-center gap-2 pt-1">
+          <button type="button" id="fchip-all" onclick="applyQuickChip('all','all','fchip-all')" class="fchip px-3 py-1.5 rounded-xl bg-jmlab-900 text-white text-xs font-bold cursor-pointer min-h-[36px]">All 63 Supplements</button>
+          <button type="button" id="fchip-single" onclick="applyQuickChip('single','all','fchip-single')" class="fchip px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-jmlab-50 text-slate-800 text-xs font-bold cursor-pointer min-h-[36px]">Single USP Amino Acids</button>
+          <button type="button" id="fchip-blend" onclick="applyQuickChip('blend','all','fchip-blend')" class="fchip px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-jmlab-50 text-slate-800 text-xs font-bold cursor-pointer min-h-[36px]">Signature Blends</button>
+          <button type="button" id="fchip-branded" onclick="applyQuickChip('branded','all','fchip-branded')" class="fchip px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-jmlab-50 text-slate-800 text-xs font-bold cursor-pointer min-h-[36px]">Creapure &amp; Setria Actives</button>
+          <button type="button" id="fchip-caps" onclick="applyQuickChip('all','caps','fchip-caps')" class="fchip px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-jmlab-50 text-slate-800 text-xs font-bold cursor-pointer min-h-[36px]">Capsule Formats</button>
+          <button type="button" id="fchip-bland" onclick="applyQuickChip('all','bland','fchip-bland')" class="fchip px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-jmlab-50 text-slate-800 text-xs font-bold cursor-pointer min-h-[36px]">Mild &amp; Sweet Bulk Powders</button>
         </div>
 
         <!-- A to Z Amino Quick-Jump Bar -->
@@ -1449,18 +1460,19 @@
       const badge = hasKilo ? '1,000g Bulk Available' : (p.cat === 'branded' ? 'Branded Clinical Active' : (p.cat === 'blend' ? 'Signature Blend' : 'USP Free-Form'));
       const selectId = `${prefix}-var-${p.id}`;
       const priceId = `${prefix}-price-${p.id}`;
+      const modalArg = p.id === 'pure-form-21-blend' ? 'pure-form-21' : p.id;
       const v0 = p.variants[0] || { t: 'Standard', p: 19.90 };
 
       return `
         <article class="bg-white rounded-2xl border border-slate-200 hover:border-jmlab-600 shadow-xs hover:shadow-md transition flex flex-col overflow-hidden">
-          <div class="relative p-4 bg-white flex items-center justify-center h-44 border-b border-slate-100 cursor-pointer" onclick="openProductModal('${p.id}')">
+          <div class="relative p-4 bg-white flex items-center justify-center h-44 border-b border-slate-100 cursor-pointer" onclick="openProductModal('${modalArg}')">
             <img src="${p.img}" alt="${p.title}" width="280" height="280" loading="lazy" decoding="async" class="max-h-36 w-auto object-contain" />
             <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md bg-jmlab-50 text-jmlab-900 border border-jmlab-100 text-[10px] font-extrabold">${badge}</span>
             ${p.tsp ? `<span class="absolute bottom-2 right-2.5 px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-mono text-[10px] font-bold">~${p.tsp}g/tsp</span>` : ''}
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
             <div class="space-y-1">
-              <button type="button" onclick="openProductModal('${p.id}')" class="text-left font-display font-extrabold text-sm sm:text-base text-jmlab-950 hover:text-jmlab-700 leading-snug cursor-pointer line-clamp-2">${p.title}</button>
+              <button type="button" onclick="openProductModal('${modalArg}')" class="text-left font-display font-extrabold text-sm sm:text-base text-jmlab-950 hover:text-jmlab-700 leading-snug cursor-pointer line-clamp-2">${p.title}</button>
               <p class="text-xs text-slate-500 leading-relaxed line-clamp-2">${p.desc}</p>
             </div>
 
@@ -1476,7 +1488,7 @@
                 <button type="button" onclick="addCardToCart('${p.id}', '${selectId}')" class="flex-1 py-2.5 px-3 rounded-xl bg-jmqc-700 hover:bg-jmqc-800 text-white font-bold text-xs transition cursor-pointer min-h-[42px]">
                   Add to Cart
                 </button>
-                <button type="button" onclick="openProductModal('${p.id}')" class="px-3 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs transition cursor-pointer min-h-[42px]" title="Inspect specs &amp; dosing">
+                <button type="button" onclick="openProductModal('${modalArg}')" class="px-3 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs transition cursor-pointer min-h-[42px]" title="Inspect specs &amp; dosing">
                   Specs
                 </button>
               </div>
@@ -1593,6 +1605,20 @@
       renderCatalog();
     }
 
+    function applyQuickChip(catVal, fmtVal, chipId) {
+      activeLetter = 'ALL';
+      document.getElementById('cat-search').value = '';
+      document.getElementById('cat-category').value = catVal;
+      document.getElementById('cat-format').value = fmtVal;
+      document.querySelectorAll('.fchip').forEach(b => {
+        b.className = b.id === chipId
+          ? 'fchip px-3 py-1.5 rounded-xl bg-jmlab-900 text-white text-xs font-bold cursor-pointer min-h-[36px]'
+          : 'fchip px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-jmlab-50 text-slate-800 text-xs font-bold cursor-pointer min-h-[36px]';
+      });
+      renderAzBar();
+      renderCatalog();
+    }
+
     function renderCatalog() {
       const q = (document.getElementById('cat-search')?.value || '').trim().toLowerCase();
       const cat = document.getElementById('cat-category')?.value || 'all';
@@ -1603,6 +1629,10 @@
         if (cat !== 'all' && p.cat !== cat) return false;
         if (fmt === 'kilo' && !p.variants.some(v => v.t.includes('1000g'))) return false;
         if (fmt === 'caps' && !p.variants.some(v => v.t.toLowerCase().includes('cap'))) return false;
+        if (fmt === 'bland') {
+          const t = (p.taste + ' ' + p.title + ' ' + p.desc).toLowerCase();
+          if (!(t.includes('bland') || t.includes('sweet') || t.includes('tasteless') || p.id.includes('glycine') || p.id.includes('glutamine') || p.id.includes('creatine') || p.id.includes('alanine') || p.id.includes('serine'))) return false;
+        }
         if (fmt === 'powder' && !p.variants.some(v => v.t.toLowerCase().includes('powder'))) return false;
         if (fmt.startsWith('goal:')) {
           const g = fmt.split(':')[1];
@@ -1625,7 +1655,7 @@
       else if (sort === 'az') list.sort((a, b) => a.title.localeCompare(b.title));
 
       document.getElementById('catalog-count-bar').innerHTML = `
-        <span>Showing <strong>${list.length}</strong> of <strong>${CATALOG.length}</strong> in-stock Jo Mar Labs supplements</span>
+        <span>Showing <strong>${list.length}</strong> verified Jo Mar Labs formulations (of ${CATALOG.length} in-stock supplements)</span>
         <span class="font-mono text-jmqc-800">Ships Same Day by 3:00 PM PST</span>
       `;
 
