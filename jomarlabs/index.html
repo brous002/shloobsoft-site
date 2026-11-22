@@ -784,12 +784,12 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap gap-2">
-            <button type="button" onclick="setQuickDose(500)" class="px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">500 mg</button>
-            <button type="button" onclick="setQuickDose(1000)" class="px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">1,000 mg</button>
-            <button type="button" onclick="setQuickDose(1500)" class="px-3 py-2 rounded-lg bg-jmlab-100 text-xs font-bold text-jmlab-900 cursor-pointer min-h-[38px]">1,500 mg</button>
-            <button type="button" onclick="setQuickDose(3000)" class="px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">3,000 mg</button>
-            <button type="button" onclick="setQuickDose(5000)" class="px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">5,000 mg</button>
+          <div id="quick-dose-chips" class="flex flex-wrap gap-2">
+            <button type="button" data-dose="500" onclick="setQuickDose(500)" class="qdose-chip px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">500 mg</button>
+            <button type="button" data-dose="1000" onclick="setQuickDose(1000)" class="qdose-chip px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">1,000 mg</button>
+            <button type="button" data-dose="1500" onclick="setQuickDose(1500)" class="qdose-chip px-3 py-2 rounded-lg bg-jmlab-100 text-xs font-bold text-jmlab-900 cursor-pointer min-h-[38px]">1,500 mg</button>
+            <button type="button" data-dose="3000" onclick="setQuickDose(3000)" class="qdose-chip px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">3,000 mg</button>
+            <button type="button" data-dose="5000" onclick="setQuickDose(5000)" class="qdose-chip px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]">5,000 mg</button>
           </div>
         </div>
 
@@ -1786,6 +1786,15 @@
       computeLotDosage();
     }
 
+    function syncQuickDoseChips(mg) {
+      document.querySelectorAll('#quick-dose-chips .qdose-chip').forEach(btn => {
+        const isMatch = Number(btn.dataset.dose) === Number(mg);
+        btn.className = isMatch
+          ? 'qdose-chip px-3 py-2 rounded-lg bg-jmlab-100 text-xs font-bold text-jmlab-900 cursor-pointer min-h-[38px]'
+          : 'qdose-chip px-3 py-2 rounded-lg bg-slate-100 hover:bg-jmlab-50 text-xs font-bold text-slate-700 cursor-pointer min-h-[38px]';
+      });
+    }
+
     function setQuickDose(mg) {
       document.getElementById('dose-mg-input').value = mg;
       computeLotDosage();
@@ -1823,6 +1832,7 @@
 
       const mgPerTsp = lastTwo * 100;
       const targetMg = Math.max(100, parseFloat(document.getElementById('dose-mg-input')?.value || '1500'));
+      syncQuickDoseChips(targetMg);
       const tspExact = targetMg / mgPerTsp;
       const gramsExact = targetMg / 1000.0;
       const caps500 = (targetMg / 500.0).toFixed(1);
