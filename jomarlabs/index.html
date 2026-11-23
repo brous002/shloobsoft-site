@@ -231,6 +231,9 @@
         <span class="hidden xl:inline text-slate-300 truncate">Modernized <strong>JoMarLabs.com</strong> 63-Product Store, SEO/LLM Authority &amp; OpsCore Lab Software</span>
       </div>
       <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <button type="button" onclick="switchView('walkthrough')" class="px-2 sm:px-2.5 py-1 rounded-md bg-sky-400 hover:bg-sky-300 text-jmlab-950 font-extrabold text-[11px] transition cursor-pointer whitespace-nowrap">
+          &#9654; 4K<span class="hidden md:inline"> Guided</span> Walkthrough
+        </button>
         <button type="button" onclick="jumpToCustomerFilm()" class="px-2 sm:px-2.5 py-1 rounded-md bg-emerald-500 hover:bg-emerald-400 text-jmlab-950 font-extrabold text-[11px] transition cursor-pointer whitespace-nowrap">
           &#9654; <span class="hidden sm:inline">Why Jo Mar </span>Film
         </button>
@@ -344,6 +347,9 @@
         <button type="button" id="nav-audit-changes" data-nav="audit-changes" onclick="switchView('audit-changes')" class="b2b-concept-only nav-pill px-3 py-2 rounded-lg text-xs font-bold tracking-wide text-emerald-300 hover:bg-white/15 transition whitespace-nowrap cursor-pointer border border-emerald-400/30">
           SEO/LLM Audit (24)
         </button>
+        <button type="button" id="nav-walkthrough" data-nav="walkthrough" onclick="switchView('walkthrough')" class="b2b-concept-only nav-pill px-3 py-2 rounded-lg text-xs font-bold tracking-wide text-sky-300 hover:bg-white/15 transition whitespace-nowrap cursor-pointer border border-sky-400/30">
+          4K Walkthrough
+        </button>
       </div>
     </nav>
 
@@ -359,6 +365,7 @@
         <button type="button" data-mobnav="quality-wholesale" onclick="switchView('quality-wholesale'); toggleMobileMenu(false)" class="mob-nav-btn text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-jmlab-950 min-h-[44px] cursor-pointer">cGMP Testing &amp; Practitioner Wholesale</button>
         <button type="button" data-mobnav="ops-software" onclick="switchView('ops-software'); toggleMobileMenu(false)" class="b2b-concept-only mob-nav-btn text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-bold bg-amber-50 text-amber-950 border border-amber-200 min-h-[44px] cursor-pointer">JoMar OpsCore Lab Software</button>
         <button type="button" data-mobnav="audit-changes" onclick="switchView('audit-changes'); toggleMobileMenu(false)" class="b2b-concept-only mob-nav-btn text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-bold bg-emerald-50 text-emerald-950 border border-emerald-200 min-h-[44px] cursor-pointer">24 Tracked SEO/LLM &amp; UX Upgrades</button>
+        <button type="button" data-mobnav="walkthrough" onclick="switchView('walkthrough'); toggleMobileMenu(false)" class="b2b-concept-only mob-nav-btn text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-bold bg-sky-50 text-sky-950 border border-sky-200 min-h-[44px] cursor-pointer">4K60 Guided Walkthrough (8:18)</button>
       </div>
     </div>
   </header>
@@ -1101,6 +1108,89 @@
   </section>
 
   <!-- ===================================================================== -->
+  <!-- VIEW 8: 4K60 GUIDED WALKTHROUGH & CHAPTER NAVIGATOR (SHLOOBSOFT PITCH) -->
+  <!-- ===================================================================== -->
+  <section id="view-walkthrough" class="view-panel">
+    <div class="bg-jmlab-950 text-white border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-6">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div class="space-y-2">
+            <div class="inline-flex flex-wrap items-center gap-2 text-xs font-bold text-sky-300 uppercase tracking-wider">
+              <span>4K60 Guided Walkthrough &bull; 8:18</span>
+              <span>&bull;</span>
+              <span>Prepared for Sunnie Farr &amp; Jo Mar Laboratories</span>
+            </div>
+            <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white leading-tight">
+              JoMarLabs.com Storefront, AI Search &amp; OpsCore Walkthrough
+            </h2>
+            <p class="text-xs sm:text-base text-slate-300 max-w-3xl leading-relaxed">
+              Watch the guided overview below, jump directly to any of the nine chapters, or click any navigation tab above to explore the live refreshed store and custom lab tools at your own pace.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button type="button" onclick="switchView('home')" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition cursor-pointer min-h-[40px]">
+              &larr; Browse Live Storefront
+            </button>
+            <button type="button" onclick="switchView('ops-software')" class="px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-jmlab-950 text-xs font-extrabold transition cursor-pointer min-h-[40px]">
+              Explore JoMar OpsCore &rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border border-white/15 bg-black shadow-2xl relative">
+          <div class="aspect-video w-full relative bg-slate-950">
+            <div id="yt-walkthrough-player" class="w-full h-full flex items-center justify-center">
+              <img src="assets/jomarlabs_youtube_thumbnail_1920x1080.png" alt="JoMarLabs.com 4K60 Concept Study Walkthrough" class="w-full h-full object-cover" />
+            </div>
+
+            <div id="wt-end-overlay" class="hidden absolute inset-0 z-20 bg-jmlab-950/95 backdrop-blur-md flex flex-col items-center justify-center text-center p-6 sm:p-10">
+              <div class="flex items-center gap-3 mb-4">
+                <img src="assets/jomarlabs_emblem.svg" alt="Jo Mar Laboratories" class="h-12 w-12 rounded-xl shadow" />
+                <span class="text-slate-400 text-xl">&times;</span>
+                <img src="assets/shloobsoft-lockup-dark.png" alt="ShloobSoft" class="h-7 w-auto object-contain" />
+              </div>
+              <h3 class="font-display font-extrabold text-2xl sm:text-4xl text-white mb-2">
+                Your Vision, 100% Owned by You
+              </h3>
+              <p class="text-xs sm:text-base text-slate-300 max-w-lg mb-6">
+                Use the navigation bar above to click through any page of this live storefront study, replay the walkthrough, or test the custom JoMar OpsCore lab modules.
+              </p>
+              <div class="flex flex-wrap items-center justify-center gap-3">
+                <button type="button" onclick="replayWalkthroughVideo()" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs sm:text-sm font-bold transition cursor-pointer">
+                  &#8635; Replay 4K60 Walkthrough
+                </button>
+                <button type="button" onclick="switchView('catalog')" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-jmlab-950 text-xs sm:text-sm font-extrabold shadow-lg transition cursor-pointer">
+                  Shop All 63 Products &rarr;
+                </button>
+                <button type="button" onclick="switchView('ops-software')" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-jmlab-950 text-xs sm:text-sm font-extrabold transition cursor-pointer">
+                  Open JoMar OpsCore &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/95 border-t border-white/10 px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+            <div>
+              <strong>Tip:</strong> Click the player gear icon (<strong>&#9881; Quality &rarr; 2160p60 4K</strong>) on desktop screens, or press <strong>CC</strong> for verified closed captions.
+            </div>
+            <div id="wt-active-scene" class="text-emerald-300 font-bold">
+              Scene 01 &bull; Framing the Concept Study &amp; 47 Years of Craftsmanship
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-5">
+      <div>
+        <h3 class="font-display font-extrabold text-xl sm:text-2xl text-jmlab-950">Interactive Walkthrough Chapters</h3>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">Click any card to jump the 4K video straight to that chapter, or jump directly to the live interactive page.</p>
+      </div>
+      <div id="wt-chapters-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
   <!-- SLIDE-OUT E-COMMERCE SHOPPING CART & EXPRESS CHECKOUT DRAWER          -->
   <!-- ===================================================================== -->
   <div id="cart-drawer" class="fixed inset-0 z-50 hidden bg-jmlab-950/60 backdrop-blur-xs flex justify-end" onclick="if(event.target===this)toggleCartDrawer(false)">
@@ -1342,11 +1432,18 @@
     }
 
     function switchView(viewId, skipHash) {
-      const valid = ['home', 'catalog', 'dosage-coa', 'custom-b2b', 'quality-wholesale', 'ops-software', 'audit-changes'];
+      const valid = ['home', 'catalog', 'dosage-coa', 'custom-b2b', 'quality-wholesale', 'ops-software', 'audit-changes', 'walkthrough'];
       const target = valid.includes(viewId) ? viewId : 'home';
       document.querySelectorAll('.view-panel').forEach(p => p.classList.remove('active'));
       const panel = document.getElementById('view-' + target);
       if (panel) panel.classList.add('active');
+
+      if (target !== 'walkthrough' && window.wtPlayer && typeof window.wtPlayer.pauseVideo === 'function') {
+        try { window.wtPlayer.pauseVideo(); } catch (_) {}
+      }
+      if (target === 'walkthrough') {
+        ensureWalkthroughPlayer();
+      }
 
       document.querySelectorAll('.nav-pill').forEach(b => b.classList.remove('active'));
       const navBtn = document.getElementById('nav-' + target);
@@ -2176,6 +2273,155 @@
       `).join('');
     }
 
+    const WT_VIDEO_ID = '';
+    const WT_CHAPTERS = [
+      { idx: 0, start: 0.00,   time: '00:00', label: 'Scene 01 • Framing the Concept Study & 47 Years of Craftsmanship', page: 'home', pageLabel: 'Open Store Home' },
+      { idx: 1, start: 47.78,  time: '00:48', label: 'Scene 02 • Brand Continuity, Cropped Hero Fix, H1 & 3D Devices', page: 'home', pageLabel: 'View Store Hero' },
+      { idx: 2, start: 109.17, time: '01:49', label: 'Scene 03 • Homepage Brand Film & Buyer Tier Switcher', page: 'home', pageLabel: 'Watch Brand Film' },
+      { idx: 3, start: 156.41, time: '02:36', label: 'Scene 04 • Fixing Storefront Bugs & 63-Product Catalog', page: 'catalog', pageLabel: 'Shop All 63 Products' },
+      { idx: 4, start: 221.26, time: '03:41', label: 'Scene 05 • Google SEO, llms.txt & AI Answer Engines', page: 'audit-changes', pageLabel: 'View SEO/LLM Audit' },
+      { idx: 5, start: 283.75, time: '04:44', label: 'Scene 06 • Interactive Spoon Dosage & COA Verifier', page: 'dosage-coa', pageLabel: 'Try Spoon/COA Calc' },
+      { idx: 6, start: 337.40, time: '05:37', label: 'Scene 07 • Live 1,000g & 24-Unit Private-Label Quoter', page: 'custom-b2b', pageLabel: 'Open Live Quoter' },
+      { idx: 7, start: 391.35, time: '06:31', label: 'Scene 08 • Security, Speed & JoMar OpsCore Lab Suite', page: 'ops-software', pageLabel: 'Explore JoMar OpsCore' },
+      { idx: 8, start: 453.43, time: '07:33', label: 'Scene 09 • 100% Client Source Code Ownership & Rollout', page: 'audit-changes', pageLabel: 'See All 24 Upgrades' }
+    ];
+
+    window.wtPlayer = null;
+    let wtLoadingApi = false;
+    let wtProgressTimer = null;
+    let wtPendingSeek = null;
+
+    function renderWalkthroughChapters() {
+      const grid = document.getElementById('wt-chapters-grid');
+      if (!grid) return;
+      grid.innerHTML = WT_CHAPTERS.map(ch => `
+        <div data-wt-idx="${ch.idx}" class="wt-chapter-card rounded-xl border border-slate-200 bg-white p-3.5 shadow-xs flex flex-col justify-between gap-2.5 transition">
+          <button type="button" onclick="seekWalkthrough(${ch.start}, ${ch.idx})" class="text-left cursor-pointer group">
+            <div class="flex items-center justify-between mb-1">
+              <span class="px-2 py-0.5 rounded bg-jmlab-50 text-jmlab-800 font-mono text-[11px] font-bold">${ch.time}</span>
+              <span class="text-[11px] font-bold text-jmqc-700 group-hover:underline">Jump Video &rarr;</span>
+            </div>
+            <div class="text-xs sm:text-sm font-bold text-jmlab-950 leading-snug">${ch.label}</div>
+          </button>
+          <div class="pt-2 border-t border-slate-100 flex justify-end">
+            <button type="button" onclick="switchView('${ch.page}')" class="text-[11px] font-bold text-jmlab-700 hover:text-jmlab-950 underline cursor-pointer">${ch.pageLabel} &rarr;</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function updateWtChapterUI(t) {
+      let cur = WT_CHAPTERS[0];
+      for (const ch of WT_CHAPTERS) {
+        if (t >= ch.start - 0.25) cur = ch;
+      }
+      document.querySelectorAll('.wt-chapter-card').forEach(card => {
+        const isActive = Number(card.getAttribute('data-wt-idx')) === cur.idx;
+        card.classList.toggle('border-jmlab-700', isActive);
+        card.classList.toggle('ring-2', isActive);
+        card.classList.toggle('ring-jmlab-200', isActive);
+      });
+      const lbl = document.getElementById('wt-active-scene');
+      if (lbl) lbl.textContent = cur.label;
+    }
+
+    function setWtEndOverlay(visible) {
+      const el = document.getElementById('wt-end-overlay');
+      if (el) el.classList.toggle('hidden', !visible);
+    }
+
+    function startWtMonitor() {
+      stopWtMonitor();
+      wtProgressTimer = setInterval(() => {
+        if (!window.wtPlayer || typeof window.wtPlayer.getCurrentTime !== 'function') return;
+        const t = window.wtPlayer.getCurrentTime() || 0;
+        const dur = window.wtPlayer.getDuration() || 0;
+        updateWtChapterUI(t);
+        if (dur > 30 && t >= dur - 0.45) {
+          window.wtPlayer.pauseVideo();
+          setWtEndOverlay(true);
+          stopWtMonitor();
+        }
+      }, 200);
+    }
+
+    function stopWtMonitor() {
+      if (wtProgressTimer) {
+        clearInterval(wtProgressTimer);
+        wtProgressTimer = null;
+      }
+    }
+
+    function mountWtPlayer() {
+      if (window.wtPlayer || !WT_VIDEO_ID) return;
+      const host = document.getElementById('yt-walkthrough-player');
+      if (host) host.innerHTML = '';
+      window.wtPlayer = new YT.Player('yt-walkthrough-player', {
+        videoId: WT_VIDEO_ID,
+        playerVars: { rel: 0, modestbranding: 1, playsinline: 1, iv_load_policy: 3, color: 'white' },
+        events: {
+          onReady: (ev) => {
+            if (ev.target && typeof ev.target.setPlaybackQualityRange === 'function') {
+              try { ev.target.setPlaybackQualityRange('hd2160', 'hd2160'); } catch (_) {}
+            }
+            if (wtPendingSeek !== null) {
+              ev.target.seekTo(wtPendingSeek, true);
+              ev.target.playVideo();
+              wtPendingSeek = null;
+            }
+          },
+          onStateChange: (ev) => {
+            if (ev.data === YT.PlayerState.PLAYING) {
+              setWtEndOverlay(false);
+              if (ev.target && typeof ev.target.setPlaybackQualityRange === 'function') {
+                try { ev.target.setPlaybackQualityRange('hd2160', 'hd2160'); } catch (_) {}
+              }
+              startWtMonitor();
+            } else if (ev.data === YT.PlayerState.ENDED) {
+              setWtEndOverlay(true);
+              stopWtMonitor();
+            } else {
+              stopWtMonitor();
+            }
+          }
+        }
+      });
+    }
+
+    function ensureWalkthroughPlayer() {
+      if (window.wtPlayer || !WT_VIDEO_ID) return;
+      if (window.YT && window.YT.Player) {
+        mountWtPlayer();
+      } else if (!wtLoadingApi) {
+        wtLoadingApi = true;
+        const tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+        window.onYouTubeIframeAPIReady = mountWtPlayer;
+      }
+    }
+
+    window.seekWalkthrough = function(sec, idx) {
+      setWtEndOverlay(false);
+      updateWtChapterUI(sec + 0.3);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (window.wtPlayer && typeof window.wtPlayer.seekTo === 'function') {
+        window.wtPlayer.seekTo(sec, true);
+        window.wtPlayer.playVideo();
+      } else {
+        wtPendingSeek = sec;
+        ensureWalkthroughPlayer();
+      }
+    };
+
+    window.replayWalkthroughVideo = function() {
+      setWtEndOverlay(false);
+      if (window.wtPlayer && typeof window.wtPlayer.seekTo === 'function') {
+        window.wtPlayer.seekTo(0, true);
+        window.wtPlayer.playVideo();
+      }
+    };
+
     window.addEventListener('hashchange', () => {
       const h = (window.location.hash || '#home').replace('#', '').split('?')[0];
       switchView(h, true);
@@ -2192,6 +2438,7 @@
       renderCustomQuoter();
       renderOpsModule('lot');
       filterAudit('all');
+      renderWalkthroughChapters();
       renderCartUI();
 
       const initialHash = (window.location.hash || '').replace('#', '').split('?')[0];
