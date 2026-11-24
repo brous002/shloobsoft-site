@@ -116,8 +116,11 @@
         "@id": "https://www.jomarlabs.com/#why-choose-video",
         "name": "Why Discerning Customers & Practitioners Choose Jo Mar Labs Above All Others",
         "description": "Inside Jo Mar Laboratories in Watsonville, California: 47 years of USP-grade crystalline free-form amino acid purity, FDA 21 CFR Part 111 cGMP in-house encapsulation, every-batch independent third-party laboratory testing, lot-encoded powder density, same-day 3 PM PST shipping, and low-minimum custom formulations.",
-        "thumbnailUrl": "https://shloobsoft.net/jomarlabs/assets/jomarlabs_og_card.png",
-        "uploadDate": "2026-11-21",
+        "thumbnailUrl": "https://shloobsoft.net/jomarlabs/assets/jomarlabs_customer_film_thumbnail_1920x1080.png",
+        "embedUrl": "https://www.youtube.com/embed/e8TDs_wmvZE",
+        "contentUrl": "https://youtu.be/e8TDs_wmvZE",
+        "duration": "PT5M47S",
+        "uploadDate": "2026-11-23",
         "publisher": { "@id": "https://www.jomarlabs.com/#organization" }
       },
       {
@@ -374,8 +377,96 @@
   <!-- VIEW 1: E-COMMERCE STORE HOME (HERO BUY-BOX + BEST-SELLERS + FILM)    -->
   <!-- ===================================================================== -->
   <main id="view-home" class="view-panel active">
+    <!-- =================================================================== -->
+    <!-- EXECUTIVE CLIENT WELCOME SHOWCASE ("Sunnie, Start Here!" 4K60)      -->
+    <!-- Automatically hidden on ?customer=1 clean customer storefront view  -->
+    <!-- =================================================================== -->
+    <section id="sunnie-start-here" class="b2b-concept-only bg-gradient-to-b from-jmlab-950 via-jmlab-900 to-jmlab-950 text-white border-b-4 border-emerald-500/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-7 sm:py-10 space-y-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="space-y-1.5 max-w-3xl">
+            <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-sky-400/15 border border-sky-300/35 text-sky-200 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider">
+              <span>Private Working Study for Jo Mar Laboratories</span>
+              <span>&bull;</span>
+              <span>8:18 Guided 4K60 Walkthrough</span>
+            </div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+              Sunnie, Start Here!
+            </h2>
+            <p class="text-xs sm:text-base text-slate-200 leading-relaxed">
+              Press play below for a guided side-by-side tour of your modernized 63-product store, 24 SEO and AI search upgrades, storefront fee-savings options, and custom <strong>JoMar OpsCore</strong> lab software, or scroll straight down to shop and test the live store yourself.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <a href="?customer=1" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-jmlab-950 text-xs font-extrabold transition min-h-[40px] inline-flex items-center">
+              Open Customer-Only View &nearr;
+            </a>
+            <button type="button" id="toggle-sunnie-banner-btn" onclick="toggleSunnieWalkthroughBody()" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-bold transition cursor-pointer min-h-[40px]">
+              Minimize Video
+            </button>
+          </div>
+        </div>
+
+        <div id="sunnie-walkthrough-body" class="space-y-4">
+          <div class="rounded-2xl overflow-hidden border border-white/20 bg-black shadow-2xl relative max-w-5xl mx-auto">
+            <div class="aspect-video w-full relative bg-slate-950">
+              <div id="yt-home-walkthrough-player" class="w-full h-full"></div>
+
+              <!-- Click-to-Play High-Resolution Poster -->
+              <button type="button" id="home-wt-poster" onclick="playHomeWalkthrough(0)" aria-label="Play Sunnie Start Here 4K60 Guided Walkthrough" class="absolute inset-0 z-10 w-full h-full group cursor-pointer text-left">
+                <img src="assets/jomarlabs_youtube_thumbnail_1920x1080.png" alt="JoMarLabs.com 4K60 Concept Study Walkthrough" width="1920" height="1080" class="w-full h-full object-cover group-hover:scale-[1.01] transition duration-300" />
+                <div class="absolute inset-0 bg-jmlab-950/30 group-hover:bg-jmlab-950/15 transition flex items-center justify-center">
+                  <span class="px-6 py-3.5 rounded-2xl bg-emerald-500 group-hover:bg-emerald-400 text-jmlab-950 font-display font-extrabold text-sm sm:text-base shadow-2xl flex items-center gap-2.5 transform group-hover:scale-105 transition">
+                    <span class="text-lg">&#9654;</span>
+                    <span>Play 8-Min Guided Walkthrough (4K60)</span>
+                  </span>
+                </div>
+              </button>
+
+              <!-- Branded Completion Card (Blocks YouTube End-Screen Clutter) -->
+              <div id="home-wt-end-overlay" class="hidden absolute inset-0 z-20 bg-jmlab-950/95 backdrop-blur-md flex flex-col items-center justify-center text-center p-6 sm:p-10">
+                <div class="flex items-center gap-3 mb-4">
+                  <img src="assets/jomarlabs_emblem.svg" alt="Jo Mar Laboratories" class="h-12 w-12 rounded-xl shadow" />
+                  <span class="text-slate-400 text-xl">&times;</span>
+                  <img src="assets/shloobsoft-lockup-dark.png" alt="ShloobSoft" class="h-7 w-auto object-contain" />
+                </div>
+                <h3 class="font-display font-extrabold text-2xl sm:text-4xl text-white mb-2">
+                  Your Vision, 100% Owned by You
+                </h3>
+                <p class="text-xs sm:text-base text-slate-300 max-w-lg mb-6">
+                  Scroll straight down to test the live 63-product storefront and customer brand film, replay this walkthrough, or explore the custom JoMar OpsCore lab suite.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                  <button type="button" onclick="replayHomeWalkthrough()" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs sm:text-sm font-bold transition cursor-pointer">
+                    &#8635; Replay 4K60 Walkthrough
+                  </button>
+                  <button type="button" onclick="document.getElementById('storefront-hero-start').scrollIntoView({behavior:'smooth'})" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-jmlab-950 text-xs sm:text-sm font-extrabold shadow-lg transition cursor-pointer">
+                    Explore Live Storefront Below &darr;
+                  </button>
+                  <button type="button" onclick="switchView('ops-software')" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-jmlab-950 text-xs sm:text-sm font-extrabold transition cursor-pointer">
+                    Open JoMar OpsCore &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900/95 border-t border-white/10 px-4 sm:px-5 py-2.5 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+              <div>
+                <strong>4K Tip:</strong> Click the player gear icon (<strong>&#9881; Quality &rarr; 2160p60 4K</strong>) on desktop monitors for full studio sharpness.
+              </div>
+              <div id="home-wt-active-scene" class="text-emerald-300 font-bold">
+                00:00 &bull; Framing the Concept Study &amp; 47 Years of Craftsmanship
+              </div>
+            </div>
+          </div>
+
+          <div id="home-wt-chips" class="max-w-5xl mx-auto flex flex-wrap gap-1.5 justify-center"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- Above-the-Fold Split Storefront Hero + Live Featured Buy Card -->
-    <section class="relative overflow-hidden bg-jmlab-950">
+    <section id="storefront-hero-start" class="relative overflow-hidden bg-jmlab-950">
       <img src="assets/hero_watsonville_lab.jpg" alt="Jo Mar Laboratories sunlit cGMP blending and analytical balance room in Watsonville, California" width="1920" height="1080" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover object-center" />
       <div class="absolute inset-0 hero-store-scrim"></div>
 
@@ -586,13 +677,44 @@
         <div class="grid lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-8 bg-jmlab-950 rounded-2xl overflow-hidden shadow-xl border border-slate-800">
             <div class="relative aspect-video bg-jmlab-950">
-              <video id="customer-brand-video" controls preload="metadata" poster="assets/hero_watsonville_lab.jpg" class="w-full h-full object-cover">
-                <source src="assets/why_choose_jomarlabs.mp4" type="video/mp4" />
-                <track kind="captions" src="assets/why_choose_jomarlabs.vtt" srclang="en" label="English" />
-              </video>
-              <div id="film-chapter-banner" class="pointer-events-none hidden sm:flex absolute top-3 left-3 right-3 items-center justify-between gap-2">
+              <div id="yt-customer-player" class="w-full h-full"></div>
+
+              <!-- Click-to-Play Customer Brand Film Poster -->
+              <button type="button" id="cf-poster" onclick="selectFilmChapter(0, 0)" aria-label="Play Why Choose Jo Mar Labs Above All Others 4K60 Film" class="absolute inset-0 z-10 w-full h-full group cursor-pointer text-left">
+                <img src="assets/jomarlabs_customer_film_thumbnail_1920x1080.png" alt="Why Choose Jo Mar Labs Above All Others: 100% Pure USP Amino Acids" width="1920" height="1080" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-[1.01] transition duration-300" />
+                <div class="absolute inset-0 bg-jmlab-950/25 group-hover:bg-jmlab-950/10 transition flex items-center justify-center">
+                  <span class="px-5 sm:px-6 py-3 rounded-2xl bg-emerald-500 group-hover:bg-emerald-400 text-jmlab-950 font-display font-extrabold text-xs sm:text-base shadow-2xl flex items-center gap-2.5 transform group-hover:scale-105 transition">
+                    <span class="text-base sm:text-lg">&#9654;</span>
+                    <span>Watch 5-Min Brand Film (4K60)</span>
+                  </span>
+                </div>
+              </button>
+
+              <!-- Branded Completion Card (Blocks YouTube End-Screen Clutter) -->
+              <div id="cf-end-overlay" class="hidden absolute inset-0 z-20 bg-jmlab-950/95 backdrop-blur-md flex flex-col items-center justify-center text-center p-6 sm:p-10">
+                <img src="assets/jomarlabs_emblem.svg" alt="Jo Mar Laboratories" class="h-14 w-14 rounded-2xl shadow-lg mb-3" />
+                <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white mb-1.5">
+                  Pure USP Amino Acids Since 1979
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300 max-w-md mb-5">
+                  Quarantined, blended, encapsulated, and independent 3rd-party lab tested batch by batch at 384 Pine Street in Watsonville, California.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-2.5">
+                  <button type="button" onclick="replayCustomerFilm()" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs sm:text-sm font-bold transition cursor-pointer">
+                    &#8635; Replay 4K60 Film
+                  </button>
+                  <button type="button" onclick="quickShopCategory('all')" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-jmlab-950 text-xs sm:text-sm font-extrabold shadow-lg transition cursor-pointer">
+                    Shop All 63 Supplements &rarr;
+                  </button>
+                  <button type="button" onclick="switchView('custom-b2b')" class="px-4 py-2.5 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-200 text-xs sm:text-sm font-bold transition cursor-pointer">
+                    1,000g Custom &amp; Private Label &rarr;
+                  </button>
+                </div>
+              </div>
+
+              <div id="film-chapter-banner" class="pointer-events-none hidden sm:flex absolute top-3 left-3 right-3 z-10 items-center justify-between gap-2">
                 <span class="px-3 py-1 rounded-full bg-jmlab-950/80 backdrop-blur-sm text-emerald-300 border border-white/15 text-[11px] font-bold">
-                  4K60 Customer &amp; Practitioner Brand Film &bull; Captioned
+                  4K60 Customer &amp; Practitioner Brand Film
                 </span>
                 <span id="active-chapter-pill" class="px-3 py-1 rounded-full bg-jmlab-950/80 backdrop-blur-sm text-white border border-white/15 text-[11px] font-semibold">
                   01 &bull; 47 Years of Watsonville Purity
@@ -601,7 +723,7 @@
             </div>
             <div class="p-3.5 sm:px-5 bg-jmlab-900/95 text-slate-200 text-xs flex flex-wrap items-center justify-between gap-2">
               <span>Encapsulated &amp; packaged in-house at <strong>384 Pine St., Watsonville, CA 95076</strong></span>
-              <span class="font-mono text-emerald-300">USP Crystalline &bull; Every-Batch Lab Tested</span>
+              <span class="font-mono text-emerald-300">2160p60 4K &bull; Every-Batch Lab Tested</span>
             </div>
           </div>
 
@@ -612,20 +734,20 @@
               <p class="text-xs text-slate-600 leading-relaxed">Quarantined, blended, and bottled under one roof in Watsonville, CA.</p>
             </button>
 
-            <button type="button" onclick="selectFilmChapter(1, 57)" id="fchap-1" class="film-chap-card w-full text-left p-3.5 rounded-2xl border border-slate-200 bg-white hover:border-jmlab-600 transition cursor-pointer space-y-1">
+            <button type="button" onclick="selectFilmChapter(1, 57.38)" id="fchap-1" class="film-chap-card w-full text-left p-3.5 rounded-2xl border border-slate-200 bg-white hover:border-jmlab-600 transition cursor-pointer space-y-1">
               <div class="flex items-center justify-between text-[11px] font-extrabold text-jmqc-700"><span>02 &bull; BIOAVAILABILITY</span><span class="font-mono">00:57</span></div>
               <h3 class="font-display font-bold text-sm text-jmlab-950">100% USP Free-Form Purity</h3>
               <p class="text-xs text-slate-600 leading-relaxed">Zero enzymatic protein breakdown required; pure Creapure, Setria &amp; Suntheanine.</p>
             </button>
 
-            <button type="button" onclick="selectFilmChapter(2, 123)" id="fchap-2" class="film-chap-card w-full text-left p-3.5 rounded-2xl border border-slate-200 bg-white hover:border-jmlab-600 transition cursor-pointer space-y-1">
-              <div class="flex items-center justify-between text-[11px] font-extrabold text-jmlab-800"><span>03 &bull; ZERO SKIP-LOT</span><span class="font-mono">02:03</span></div>
+            <button type="button" onclick="selectFilmChapter(2, 123.88)" id="fchap-2" class="film-chap-card w-full text-left p-3.5 rounded-2xl border border-slate-200 bg-white hover:border-jmlab-600 transition cursor-pointer space-y-1">
+              <div class="flex items-center justify-between text-[11px] font-extrabold text-jmlab-800"><span>03 &bull; ZERO SKIP-LOT</span><span class="font-mono">02:04</span></div>
               <h3 class="font-display font-bold text-sm text-jmlab-950">Every Single Batch 3rd-Party Tested</h3>
               <p class="text-xs text-slate-600 leading-relaxed">Independent lab screening for microbials, heavy metals, gluten, soy, and potency.</p>
             </button>
 
-            <button type="button" onclick="selectFilmChapter(3, 242)" id="fchap-3" class="film-chap-card w-full text-left p-3.5 rounded-2xl border border-slate-200 bg-white hover:border-jmlab-600 transition cursor-pointer space-y-1">
-              <div class="flex items-center justify-between text-[11px] font-extrabold text-amber-700"><span>04 &bull; CUSTOM &amp; SAME-DAY</span><span class="font-mono">04:02</span></div>
+            <button type="button" onclick="selectFilmChapter(3, 242.71)" id="fchap-3" class="film-chap-card w-full text-left p-3.5 rounded-2xl border border-slate-200 bg-white hover:border-jmlab-600 transition cursor-pointer space-y-1">
+              <div class="flex items-center justify-between text-[11px] font-extrabold text-amber-700"><span>04 &bull; CUSTOM &amp; SAME-DAY</span><span class="font-mono">04:03</span></div>
               <h3 class="font-display font-bold text-sm text-jmlab-950">1-Bottle Orders to 1,000g Custom Blends</h3>
               <p class="text-xs text-slate-600 leading-relaxed">Same-day 3 PM PST shipping, $100 custom 1kg mixes, and 24-unit private label.</p>
             </button>
@@ -1441,6 +1563,14 @@
       if (target !== 'walkthrough' && window.wtPlayer && typeof window.wtPlayer.pauseVideo === 'function') {
         try { window.wtPlayer.pauseVideo(); } catch (_) {}
       }
+      if (target !== 'home') {
+        if (window.homeWtPlayer && typeof window.homeWtPlayer.pauseVideo === 'function') {
+          try { window.homeWtPlayer.pauseVideo(); } catch (_) {}
+        }
+        if (window.cfPlayer && typeof window.cfPlayer.pauseVideo === 'function') {
+          try { window.cfPlayer.pauseVideo(); } catch (_) {}
+        }
+      }
       if (target === 'walkthrough') {
         ensureWalkthroughPlayer();
       }
@@ -1813,7 +1943,7 @@
       }, 80);
     }
 
-    function selectFilmChapter(idx, sec) {
+    function setCfChapterUI(idx) {
       const labels = [
         '01 • 47 Years of Watsonville Purity',
         '02 • 100% USP Free-Form Bioavailability',
@@ -1827,11 +1957,11 @@
       });
       const pill = document.getElementById('active-chapter-pill');
       if (pill) pill.textContent = labels[idx] || labels[0];
-      const v = document.getElementById('customer-brand-video');
-      if (v && v.readyState >= 1) {
-        v.currentTime = sec;
-        v.play().catch(() => {});
-      }
+    }
+
+    function selectFilmChapter(idx, sec) {
+      setCfChapterUI(idx);
+      playCustomerFilm(sec);
     }
 
     function renderAudienceTab(key) {
@@ -2273,21 +2403,270 @@
       `).join('');
     }
 
-    const WT_VIDEO_ID = '';
+    const WT_VIDEO_ID = 'sSfK_c2ws_E';
+    const CF_VIDEO_ID = 'e8TDs_wmvZE';
     const WT_CHAPTERS = [
-      { idx: 0, start: 0.00,   time: '00:00', label: 'Scene 01 • Framing the Concept Study & 47 Years of Craftsmanship', page: 'home', pageLabel: 'Open Store Home' },
-      { idx: 1, start: 47.78,  time: '00:48', label: 'Scene 02 • Brand Continuity, Cropped Hero Fix, H1 & 3D Devices', page: 'home', pageLabel: 'View Store Hero' },
-      { idx: 2, start: 109.17, time: '01:49', label: 'Scene 03 • Homepage Brand Film & Buyer Tier Switcher', page: 'home', pageLabel: 'Watch Brand Film' },
-      { idx: 3, start: 156.41, time: '02:36', label: 'Scene 04 • Fixing Storefront Bugs & 63-Product Catalog', page: 'catalog', pageLabel: 'Shop All 63 Products' },
-      { idx: 4, start: 221.26, time: '03:41', label: 'Scene 05 • Google SEO, llms.txt & AI Answer Engines', page: 'audit-changes', pageLabel: 'View SEO/LLM Audit' },
-      { idx: 5, start: 283.75, time: '04:44', label: 'Scene 06 • Interactive Spoon Dosage & COA Verifier', page: 'dosage-coa', pageLabel: 'Try Spoon/COA Calc' },
-      { idx: 6, start: 337.40, time: '05:37', label: 'Scene 07 • Live 1,000g & 24-Unit Private-Label Quoter', page: 'custom-b2b', pageLabel: 'Open Live Quoter' },
-      { idx: 7, start: 391.35, time: '06:31', label: 'Scene 08 • Security, Speed & JoMar OpsCore Lab Suite', page: 'ops-software', pageLabel: 'Explore JoMar OpsCore' },
-      { idx: 8, start: 453.43, time: '07:33', label: 'Scene 09 • 100% Client Source Code Ownership & Rollout', page: 'audit-changes', pageLabel: 'See All 24 Upgrades' }
+      { idx: 0, start: 0.00,   time: '00:00', short: '01 • Intro',          label: 'Scene 01 • Framing the Concept Study & 47 Years of Craftsmanship', page: 'home', pageLabel: 'Open Store Home' },
+      { idx: 1, start: 47.78,  time: '00:48', short: '02 • Hero & Devices', label: 'Scene 02 • Brand Continuity, Cropped Hero Fix, H1 & 3D Devices', page: 'home', pageLabel: 'View Store Hero' },
+      { idx: 2, start: 109.17, time: '01:49', short: '03 • Brand Film',     label: 'Scene 03 • Homepage Brand Film & Buyer Tier Switcher', page: 'home', pageLabel: 'Watch Brand Film' },
+      { idx: 3, start: 156.41, time: '02:36', short: '04 • 63-SKU Store',   label: 'Scene 04 • Fixing Storefront Bugs & 63-Product Catalog', page: 'catalog', pageLabel: 'Shop All 63 Products' },
+      { idx: 4, start: 221.26, time: '03:41', short: '05 • SEO & AI',       label: 'Scene 05 • Google SEO, llms.txt & AI Answer Engines', page: 'audit-changes', pageLabel: 'View SEO/LLM Audit' },
+      { idx: 5, start: 283.75, time: '04:44', short: '06 • Spoon/COA',      label: 'Scene 06 • Interactive Spoon Dosage & COA Verifier', page: 'dosage-coa', pageLabel: 'Try Spoon/COA Calc' },
+      { idx: 6, start: 337.40, time: '05:37', short: '07 • Custom/24-Unit', label: 'Scene 07 • Live 1,000g & 24-Unit Private-Label Quoter', page: 'custom-b2b', pageLabel: 'Open Live Quoter' },
+      { idx: 7, start: 391.35, time: '06:31', short: '08 • JoMar OpsCore',  label: 'Scene 08 • Security, Speed & JoMar OpsCore Lab Suite', page: 'ops-software', pageLabel: 'Explore JoMar OpsCore' },
+      { idx: 8, start: 453.43, time: '07:33', short: '09 • Code Ownership', label: 'Scene 09 • 100% Client Source Code Ownership & Rollout', page: 'audit-changes', pageLabel: 'See All 24 Upgrades' }
+    ];
+    const CF_CHAPTERS = [
+      { idx: 0, start: 0.00 },
+      { idx: 1, start: 57.38 },
+      { idx: 2, start: 123.88 },
+      { idx: 3, start: 242.71 }
     ];
 
+    let ytApiRequested = false;
+    const ytReadyQueue = [];
+    function ensureYouTubeApi(cb) {
+      if (window.YT && window.YT.Player) {
+        cb();
+        return;
+      }
+      ytReadyQueue.push(cb);
+      if (!ytApiRequested) {
+        ytApiRequested = true;
+        const prev = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function() {
+          if (typeof prev === 'function') prev();
+          while (ytReadyQueue.length) {
+            const fn = ytReadyQueue.shift();
+            try { fn(); } catch (_) {}
+          }
+        };
+        const tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+      }
+    }
+
+    function pauseOtherPlayers(activeKey) {
+      const map = { homeWt: window.homeWtPlayer, cf: window.cfPlayer, wt: window.wtPlayer };
+      Object.keys(map).forEach(k => {
+        if (k !== activeKey && map[k] && typeof map[k].pauseVideo === 'function') {
+          try { map[k].pauseVideo(); } catch (_) {}
+        }
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // Player 1: "Sunnie, Start Here!" Top-of-Home 4K60 Walkthrough (sSfK_c2ws_E)
+    // -------------------------------------------------------------------------
+    window.homeWtPlayer = null;
+    let homeWtTimer = null;
+    let homeWtPendingSeek = null;
+
+    function toggleSunnieWalkthroughBody() {
+      const body = document.getElementById('sunnie-walkthrough-body');
+      const btn = document.getElementById('toggle-sunnie-banner-btn');
+      if (!body || !btn) return;
+      const hiding = !body.classList.contains('hidden');
+      body.classList.toggle('hidden', hiding);
+      btn.textContent = hiding ? 'Expand Walkthrough Video' : 'Minimize Video';
+      if (hiding && window.homeWtPlayer && typeof window.homeWtPlayer.pauseVideo === 'function') {
+        try { window.homeWtPlayer.pauseVideo(); } catch (_) {}
+      }
+    }
+
+    function renderHomeWalkthroughChips() {
+      const wrap = document.getElementById('home-wt-chips');
+      if (!wrap) return;
+      wrap.innerHTML = WT_CHAPTERS.map(ch => `
+        <button type="button" data-hwt-idx="${ch.idx}" onclick="playHomeWalkthrough(${ch.start})" class="hwt-chip px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-[11px] font-bold text-slate-200 transition cursor-pointer">
+          <span class="font-mono text-emerald-300 mr-1">${ch.time}</span>${ch.short}
+        </button>
+      `).join('');
+    }
+
+    function updateHomeWtUI(t) {
+      let cur = WT_CHAPTERS[0];
+      for (const ch of WT_CHAPTERS) {
+        if (t >= ch.start - 0.25) cur = ch;
+      }
+      document.querySelectorAll('.hwt-chip').forEach(btn => {
+        const active = Number(btn.getAttribute('data-hwt-idx')) === cur.idx;
+        btn.classList.toggle('bg-emerald-500/25', active);
+        btn.classList.toggle('border-emerald-400', active);
+      });
+      const lbl = document.getElementById('home-wt-active-scene');
+      if (lbl) lbl.textContent = cur.time + ' • ' + cur.label.replace(/^Scene \d+ • /, '');
+    }
+
+    function setHomeWtEndOverlay(v) {
+      const el = document.getElementById('home-wt-end-overlay');
+      if (el) el.classList.toggle('hidden', !v);
+    }
+
+    function stopHomeWtMonitor() {
+      if (homeWtTimer) { clearInterval(homeWtTimer); homeWtTimer = null; }
+    }
+
+    function startHomeWtMonitor() {
+      stopHomeWtMonitor();
+      homeWtTimer = setInterval(() => {
+        if (!window.homeWtPlayer || typeof window.homeWtPlayer.getCurrentTime !== 'function') return;
+        const t = window.homeWtPlayer.getCurrentTime() || 0;
+        const dur = window.homeWtPlayer.getDuration() || 0;
+        updateHomeWtUI(t);
+        if (dur > 30 && t >= dur - 0.45) {
+          window.homeWtPlayer.pauseVideo();
+          setHomeWtEndOverlay(true);
+          stopHomeWtMonitor();
+        }
+      }, 200);
+    }
+
+    function mountHomeWtPlayer() {
+      if (window.homeWtPlayer) return;
+      window.homeWtPlayer = new YT.Player('yt-home-walkthrough-player', {
+        videoId: WT_VIDEO_ID,
+        playerVars: { rel: 0, modestbranding: 1, playsinline: 1, iv_load_policy: 3, color: 'white', autoplay: 1 },
+        events: {
+          onReady: (ev) => {
+            if (ev.target && typeof ev.target.setPlaybackQualityRange === 'function') {
+              try { ev.target.setPlaybackQualityRange('hd2160', 'hd2160'); } catch (_) {}
+            }
+            const s = homeWtPendingSeek !== null ? homeWtPendingSeek : 0;
+            homeWtPendingSeek = null;
+            ev.target.seekTo(s, true);
+            ev.target.playVideo();
+          },
+          onStateChange: (ev) => {
+            if (ev.data === YT.PlayerState.PLAYING) {
+              pauseOtherPlayers('homeWt');
+              setHomeWtEndOverlay(false);
+              if (ev.target && typeof ev.target.setPlaybackQualityRange === 'function') {
+                try { ev.target.setPlaybackQualityRange('hd2160', 'hd2160'); } catch (_) {}
+              }
+              startHomeWtMonitor();
+            } else if (ev.data === YT.PlayerState.ENDED) {
+              setHomeWtEndOverlay(true);
+              stopHomeWtMonitor();
+            } else {
+              stopHomeWtMonitor();
+            }
+          }
+        }
+      });
+    }
+
+    window.playHomeWalkthrough = function(sec) {
+      const poster = document.getElementById('home-wt-poster');
+      if (poster) poster.classList.add('hidden');
+      setHomeWtEndOverlay(false);
+      pauseOtherPlayers('homeWt');
+      updateHomeWtUI((sec || 0) + 0.3);
+      if (window.homeWtPlayer && typeof window.homeWtPlayer.seekTo === 'function') {
+        window.homeWtPlayer.seekTo(sec || 0, true);
+        window.homeWtPlayer.playVideo();
+      } else {
+        homeWtPendingSeek = sec || 0;
+        ensureYouTubeApi(mountHomeWtPlayer);
+      }
+    };
+
+    window.replayHomeWalkthrough = function() {
+      playHomeWalkthrough(0);
+    };
+
+    // -------------------------------------------------------------------------
+    // Player 2: Homepage "Why Choose Jo Mar Labs" Brand Film (e8TDs_wmvZE)
+    // -------------------------------------------------------------------------
+    window.cfPlayer = null;
+    let cfTimer = null;
+    let cfPendingSeek = null;
+
+    function setCfEndOverlay(v) {
+      const el = document.getElementById('cf-end-overlay');
+      if (el) el.classList.toggle('hidden', !v);
+    }
+
+    function stopCfMonitor() {
+      if (cfTimer) { clearInterval(cfTimer); cfTimer = null; }
+    }
+
+    function startCfMonitor() {
+      stopCfMonitor();
+      cfTimer = setInterval(() => {
+        if (!window.cfPlayer || typeof window.cfPlayer.getCurrentTime !== 'function') return;
+        const t = window.cfPlayer.getCurrentTime() || 0;
+        const dur = window.cfPlayer.getDuration() || 0;
+        let curIdx = 0;
+        for (const ch of CF_CHAPTERS) {
+          if (t >= ch.start - 0.25) curIdx = ch.idx;
+        }
+        setCfChapterUI(curIdx);
+        if (dur > 30 && t >= dur - 0.45) {
+          window.cfPlayer.pauseVideo();
+          setCfEndOverlay(true);
+          stopCfMonitor();
+        }
+      }, 200);
+    }
+
+    function mountCfPlayer() {
+      if (window.cfPlayer) return;
+      window.cfPlayer = new YT.Player('yt-customer-player', {
+        videoId: CF_VIDEO_ID,
+        playerVars: { rel: 0, modestbranding: 1, playsinline: 1, iv_load_policy: 3, color: 'white', autoplay: 1 },
+        events: {
+          onReady: (ev) => {
+            if (ev.target && typeof ev.target.setPlaybackQualityRange === 'function') {
+              try { ev.target.setPlaybackQualityRange('hd2160', 'hd2160'); } catch (_) {}
+            }
+            const s = cfPendingSeek !== null ? cfPendingSeek : 0;
+            cfPendingSeek = null;
+            ev.target.seekTo(s, true);
+            ev.target.playVideo();
+          },
+          onStateChange: (ev) => {
+            if (ev.data === YT.PlayerState.PLAYING) {
+              pauseOtherPlayers('cf');
+              setCfEndOverlay(false);
+              if (ev.target && typeof ev.target.setPlaybackQualityRange === 'function') {
+                try { ev.target.setPlaybackQualityRange('hd2160', 'hd2160'); } catch (_) {}
+              }
+              startCfMonitor();
+            } else if (ev.data === YT.PlayerState.ENDED) {
+              setCfEndOverlay(true);
+              stopCfMonitor();
+            } else {
+              stopCfMonitor();
+            }
+          }
+        }
+      });
+    }
+
+    window.playCustomerFilm = function(sec) {
+      const poster = document.getElementById('cf-poster');
+      if (poster) poster.classList.add('hidden');
+      setCfEndOverlay(false);
+      pauseOtherPlayers('cf');
+      if (window.cfPlayer && typeof window.cfPlayer.seekTo === 'function') {
+        window.cfPlayer.seekTo(sec || 0, true);
+        window.cfPlayer.playVideo();
+      } else {
+        cfPendingSeek = sec || 0;
+        ensureYouTubeApi(mountCfPlayer);
+      }
+    };
+
+    window.replayCustomerFilm = function() {
+      selectFilmChapter(0, 0);
+    };
+
+    // -------------------------------------------------------------------------
+    // Player 3: Dedicated #walkthrough View Player (sSfK_c2ws_E)
+    // -------------------------------------------------------------------------
     window.wtPlayer = null;
-    let wtLoadingApi = false;
     let wtProgressTimer = null;
     let wtPendingSeek = null;
 
@@ -2372,6 +2751,7 @@
           },
           onStateChange: (ev) => {
             if (ev.data === YT.PlayerState.PLAYING) {
+              pauseOtherPlayers('wt');
               setWtEndOverlay(false);
               if (ev.target && typeof ev.target.setPlaybackQualityRange === 'function') {
                 try { ev.target.setPlaybackQualityRange('hd2160', 'hd2160'); } catch (_) {}
@@ -2390,19 +2770,12 @@
 
     function ensureWalkthroughPlayer() {
       if (window.wtPlayer || !WT_VIDEO_ID) return;
-      if (window.YT && window.YT.Player) {
-        mountWtPlayer();
-      } else if (!wtLoadingApi) {
-        wtLoadingApi = true;
-        const tag = document.createElement('script');
-        tag.src = 'https://www.youtube.com/iframe_api';
-        document.head.appendChild(tag);
-        window.onYouTubeIframeAPIReady = mountWtPlayer;
-      }
+      ensureYouTubeApi(mountWtPlayer);
     }
 
     window.seekWalkthrough = function(sec, idx) {
       setWtEndOverlay(false);
+      pauseOtherPlayers('wt');
       updateWtChapterUI(sec + 0.3);
       window.scrollTo({ top: 0, behavior: 'smooth' });
       if (window.wtPlayer && typeof window.wtPlayer.seekTo === 'function') {
@@ -2416,6 +2789,7 @@
 
     window.replayWalkthroughVideo = function() {
       setWtEndOverlay(false);
+      pauseOtherPlayers('wt');
       if (window.wtPlayer && typeof window.wtPlayer.seekTo === 'function') {
         window.wtPlayer.seekTo(0, true);
         window.wtPlayer.playVideo();
@@ -2438,6 +2812,7 @@
       renderCustomQuoter();
       renderOpsModule('lot');
       filterAudit('all');
+      renderHomeWalkthroughChips();
       renderWalkthroughChapters();
       renderCartUI();
 
